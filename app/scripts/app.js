@@ -100,7 +100,19 @@ angular
           parent: 'dashboard',
           templateUrl: 'views/ui-elements/progressbar.html',
           conntroller: 'ProgressDemoCtrl'
-        })                  
+        })      
+          .state('tabs', {
+          url: '/tabs',
+          parent: 'dashboard',
+          templateUrl: 'views/ui-elements/tabs.html',
+          conntroller: 'TabsDemoCtrl'
+        })      
+          .state('timepicker', {
+          url: '/timepicker',
+          parent: 'dashboard',
+          templateUrl: 'views/ui-elements/timepicker.html',
+          conntroller: 'TimepickerDemoCtrl'
+        })             
           .state('button', {
             url: '/button',
             parent: 'dashboard',
