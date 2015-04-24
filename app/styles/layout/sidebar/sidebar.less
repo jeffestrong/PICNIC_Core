@@ -1,0 +1,142 @@
+aside#sidebar {
+	width: 235px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: @brand-primary;
+	div.side-widgets {
+		margin-left: 45px;
+		position: fixed;
+		color: #D8F5FF;
+		top: 50px;
+		bottom: 0;
+		.widgets-header {
+			text-align: center;
+			padding: 15px;
+			height: 50px;
+			color: lighten(@brand-primary, 35%);
+			font-size: 15px;
+			font-weight: 600;
+			a {
+				color: inherit;
+				&:hover, &:focus {
+					color: lighten(@brand-primary, 55%);
+					text-decoration: none;
+				}
+			}
+		}
+		.widgets-content {
+			padding: 5px;
+			border-top: 1px solid darken(@brand-primary, 6%);
+			width: 188px;
+			padding: 12px;
+			.avatar-name {
+				padding-top: 12px;
+			}
+			.calendar-container {
+				margin-top: 10px;
+			}
+			.news-feed {
+				.feed-header {
+					text-transform: uppercase;
+					margin-left: -12px;
+					margin-right: -12px;
+					height: 27px;
+					padding-top: 6px;
+					padding-left: 12px;
+					font-size: 10px;
+					margin-top: 10px;
+					background: darken(@brand-primary, 10%);
+				}
+				.feed-content {
+					margin-top: 4px;
+					ul {
+						list-style-type: none;
+						padding: 0;
+						li {
+							height: 40px;
+							padding-top: 4px;
+							font-size: 10.5px;
+							.feed-date {
+								float: right;
+								font-size: 9px;
+								padding-right: 5px;
+								color: #D2D2D2;
+							}
+							a {
+								color: inherit;
+								&:hover, &:focus {
+									color: lighten(@brand-primary, 55%);
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	div.side-menu {
+		width: 45px;
+		background: darken(@brand-primary, 10%);
+		position: fixed;
+		top: 50px;
+		bottom: 0;
+		.menu-header {
+			height: 50px;
+			padding: 8px;
+		}
+		.menu-body {
+			width: 45px;
+			border-top: 1px solid darken(@brand-primary, 6%);
+			ul.sidenav {
+				list-style-type: none;
+				padding: 0;
+				li {
+					position: relative;
+					margin-top: 0;
+					color: #6D6D6D;
+					a {
+						color: #D8F5FF;
+						border-radius: 0;
+						transition: all .12s linear;
+						height: 44px;
+						
+					}
+					a:hover, a:focus, a:active {			
+						background: @brand-primary;
+						color: lighten(#D8F5FF, 10%);
+					}
+					ul.nested-dropdown {
+						display: none;
+						list-style: none;
+						position: absolute;
+						top: 0;
+						background: #ECF0F1;
+						padding: 8px;
+						padding-top: 12px;
+						left: 66px;
+						width: 190px;
+						min-height: 40px;
+						transition: all 1s;	
+						li {
+							min-height: 24px;
+
+						}		
+						li.sidemenu-header {
+							text-transform: uppercase;
+							min-height: 31px;
+							border-bottom: 1px solid lighten(@brand-primary, 6%)
+						}
+					}
+					&:hover {
+						ul.nested-dropdown {
+							display: block;
+							left: 46px;
+						}
+					}
+				}
+			}
+		}	
+	}
+}

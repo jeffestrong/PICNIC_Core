@@ -1,0 +1,41 @@
+.stat {
+	background: white;
+	display: table;
+	min-width: 220px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	.stat-icon {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		width: 90px;
+		
+		.primary {
+			color: @brand-primary;
+		}
+		.info {
+			color: @brand-info;
+		}
+		.warning {
+			color: @brand-warning;
+		}
+		.success {
+			color: @brand-success;
+		}
+		.danger {
+			color: @brand-danger;
+		}
+	}
+	.stat-label {
+		padding-left: 15px;
+		display: table-cell;
+		vertical-align: middle;
+		.label-header {
+			font-size: 22px;
+		}
+		.label-body {
+			font-size: 12px;
+		}
+	}
+}

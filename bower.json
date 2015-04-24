@@ -10,8 +10,13 @@
     "ui-router": "~0.2.13",
     "bootstrap-btn-outline-rounded": "~0.0.3",
     "angular-animate": "~1.3.15",
-    "angular-bootstrap": "0.12.0"
-    
+    "angular-bootstrap": "0.12.0",
+    "animate.css": "~3.2.6",
+    "angular-ui-calendar": "~0.8.1",
+    "angular-chart.js": "~0.6.0",
+    "fontawesome": "~4.3.0",
+    "hover": "~2.0.2",
+    "c3-angular": "~0.3.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0"

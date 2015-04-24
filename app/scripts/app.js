@@ -1,123 +1,144 @@
 'use strict';
 
 /**
- * @ngdoc overview
- * @name yapp
- * @description
- * # yapp
- *
- * Main module of the application.
- */
+* @ngdoc overview
+* @name yapp
+* @description
+* # yapp
+*
+* Main module of the application.
+*/
 angular
-  .module('yapp', [
+.module('yapp', [
     'ui.router',
     'ngAnimate',
+    'ui.calendar',
+    'chart.js',
+    'gridshore.c3js.chart',
     'ui.bootstrap'
-  ])
-  .config(function($stateProvider, $urlRouterProvider) {
+    ])
+.config(function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.when('/dashboard', '/dashboard/overview');
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.when('/dashboard', '/dashboard/home');
+    $urlRouterProvider.otherwise('login');
 
     $stateProvider
-      .state('base', {
+    .state('base', {
         abstract: true,
         url: '',
         templateUrl: 'views/base.html'
-      })
-        .state('login', {
-          url: '/login',
-          parent: 'base',
-          templateUrl: 'views/login.html',
-          controller: 'LoginCtrl'
-        })
-        .state('dashboard', {
-          url: '/dashboard',
-          parent: 'base',
-          templateUrl: 'views/dashboard.html',
-          controller: 'DashboardCtrl'
-        })
-          .state('overview', {
-            url: '/overview',
-            parent: 'dashboard',
-            templateUrl: 'views/dashboard/overview.html'
-        })
-          .state('reports', {
-            url: '/reports',
-            parent: 'dashboard',
-            templateUrl: 'views/dashboard/reports.html'
-        })
-          .state('accordion', {
-            url: '/accordion',
-            parent: 'dashboard',
-            templateUrl: 'views/ui-elements/accordion.html',
-            conntroller: 'AccordionDemoCtrl'
-        }) 
-          .state('alert', {
-          url: '/alert',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/alert.html',
-          conntroller: 'AlertDemoCtrl'
-        })
-          .state('collapse', {
-          url: '/collapse',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/collapse.html',
-          conntroller: 'CollapseDemoCtrl'
-        }) 
-          .state('datepicker', {
-          url: '/datepicker',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/datepicker.html',
-          conntroller: 'DatepickerDemoCtrl'
-        })
-          .state('dropdown', {
-          url: '/dropdown',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/dropdown.html',
-          conntroller: 'DropdownCtrl'
-        })
-          .state('modal', {
-          url: '/modal',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/modal.html',
-          conntroller: 'ModalDemoCtrl'
-        })  
-          .state('pagination', {
-          url: '/pagination',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/pagination.html',
-          conntroller: 'PaginationDemoCtrl'
-        })  
-          .state('popover', {
-          url: '/popover',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/popover.html',
-          conntroller: 'PopoverDemoCtrl'
-        })    
-          .state('progressbars', {
-          url: '/progressbars',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/progressbar.html',
-          conntroller: 'ProgressDemoCtrl'
-        })      
-          .state('tabs', {
-          url: '/tabs',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/tabs.html',
-          conntroller: 'TabsDemoCtrl'
-        })      
-          .state('timepicker', {
-          url: '/timepicker',
-          parent: 'dashboard',
-          templateUrl: 'views/ui-elements/timepicker.html',
-          conntroller: 'TimepickerDemoCtrl'
-        })             
-          .state('button', {
-            url: '/button',
-            parent: 'dashboard',
-            templateUrl: 'views/ui-elements/button.html',
-            conntroller: 'ButtonsCtrl'
-        }); 
+    })
+    .state('login', {
+        url: '/login',
+        parent: 'base',
+        templateUrl: 'views/pages/login.html',
+        controller: 'LoginCtrl'
+    })
+    .state('signup', {
+        url: '/signup',
+        parent: 'base',
+        templateUrl: 'views/pages/signup.html',
+        controller: 'LoginCtrl'
+    })
+    .state('404-page', {
+        url: '/404-page',
+        parent: 'base',
+        templateUrl: 'views/pages/404-page.html'
+    })
+    .state('dashboard', {
+        url: '/dashboard',
+        parent: 'base',
+        templateUrl: 'views/layouts/dashboard.html',
+        controller: 'DashboardCtrl'
+    })
+    .state('home', {
+        url: '/home',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/home.html'
+    })
+    .state('typography', {
+        url: '/typography',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/typography.html'
+    })
+    .state('blank', {
+        url: '/blank',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/blank.html'
+    })
+    .state('table', {
+        url: '/table',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/table.html'
+    })
+    .state('elements', {
+        url: '/form/elements',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/forms/elements.html'
+    }) 
+    .state('components', {
+        url: '/form/components',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/forms/components.html'
+    }) 
 
-  });
+    .state('button', {
+        url: '/ui-interface/button',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/button.html'
+    }) 
+    .state('other-elements', {
+        url: '/ui-interface/other-elements',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/other-elements.html'
+    })
+    .state('icons', {
+        url: '/ui-interface/icons',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/icons.html'
+    })
+    .state('alerts', {
+        url: '/ui-interface/alerts',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/alert.html',
+        conntroller: 'AlertDemoCtrl'
+    })  
+    .state('progressbars', {
+        url: '/ui-interface/progressbars',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/progressbar.html',
+        conntroller: 'ProgressDemoCtrl'
+    })      
+    .state('pagination', {
+        url: '/ui-interface/pagination',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/pagination.html',
+        conntroller: 'PaginationDemoCtrl'
+    })  
+    .state('chartjs', {
+        url: '/charts/chart.js',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/charts/chartjs.html'
+    })  
+    .state('c3chart', {
+        url: '/charts/c3chart',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/charts/c3chart.html'
+    })      
+    .state('calendar', {
+        url: '/calendar',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/calendar.html'
+    })      
+    .state('inbox', {
+        url: '/mail/inbox',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/mail/inbox.html'
+    })
+      .state('compose', {
+        url: '/mail/compose',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/mail/compose.html'
+    });
+
+});
