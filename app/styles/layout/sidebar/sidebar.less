@@ -28,10 +28,13 @@ aside#sidebar {
 			}
 		}
 		.widgets-content {
-			padding: 5px;
 			border-top: 1px solid darken(@brand-primary, 6%);
-			width: 188px;
+			width: @nav-width - 45px;
 			padding: 12px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			overflow: hidden;
 			.avatar-name {
 				padding-top: 12px;
 			}

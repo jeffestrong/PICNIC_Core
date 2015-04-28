@@ -4,14 +4,14 @@
 	height: 350px;
 	.todo-header {
 		position: relative;
+		padding: 0 0 15px 0;
 		h4 {
 			color: #FFFFFF;
 			font-weight: 600;
-			padding-top: 12px;
-			font-size: 19px;
-			margin-top: 0;
+			font-size: 18px;
+			margin: 0;
 			.fa {
-				font-size: 26px;
+				font-size: 24px;
 				position: relative;
 				top: 3px;
 				right: 2px;
@@ -19,14 +19,19 @@
 		}			
 	}
 	.todo-body {
-		height: 235px;
-		overflow: auto;
-		ul.todo-list {
+		.todo-list-wrap {
+			height: 235px;
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 15px;
+		}
+		.todo-list {
 			color: white;
-			padding-left: 12px;
+			padding: 0;
+			margin: 0;
 			li {
-				padding-top: 9px;
-				padding-bottom: 9px;
+				padding-top: 8px;
+				padding-bottom: 8px;
 				font-size: 15px;
 				.checkbox1 input:checked + span:before {
 				  background: inherit;
@@ -41,11 +46,7 @@
 				}
 			}
 		}
-		.form-inline1 {
-			position: absolute;
-			bottom: 15px;
-			left: 15px;
-			width: 85%;
+		.todo-from-bottom {
 			.form-control {
 				border-color: white;			
 			}

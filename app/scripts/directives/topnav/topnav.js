@@ -10,7 +10,7 @@ angular.module('yapp')
 
         	$scope.showMenu = function(){
 
-		        $('.dashboard-page').toggleClass('push-left');
+		        $('.dashboard-page').toggleClass('push-right');
 
         	}
         }

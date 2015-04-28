@@ -16,6 +16,7 @@ angular
     'chart.js',
     'gridshore.c3js.chart',
     'angular-growl',
+    'perfect_scrollbar',
     'ui.bootstrap'
     ])
 .config(function($stateProvider, $urlRouterProvider) {
