@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('yapp')
+
+angular.module('AniTheme')
 	.directive('sidebarNewsfeed',function(){
 		return {
         templateUrl:'scripts/directives/sidebar/sidebar-widgets/sidebar-newsfeed/sidebar-newsfeed.html',

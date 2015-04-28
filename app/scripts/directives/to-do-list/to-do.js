@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('yapp')
+angular.module('AniTheme')
 .directive('todolist',function(){
 		return {
 	    templateUrl:'scripts/directives/to-do-list/to-do.html',

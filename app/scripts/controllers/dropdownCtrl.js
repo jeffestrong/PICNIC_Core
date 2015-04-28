@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('DropdownCtrl', function ($scope, $log) {
+angular.module('AniTheme').controller('DropdownCtrl', function ($scope, $log) {
   $scope.items = [
     'The first choice!',
     'And another choice for you.',

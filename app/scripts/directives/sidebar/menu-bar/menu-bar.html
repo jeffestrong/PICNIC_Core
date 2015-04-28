@@ -6,7 +6,7 @@
 				<span class="glyphicon glyphicon-home"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
-					<a ng-class="{active: $state.includes('home')}" ui-sref="home"><li>DASHBOARD</li></a>
+					<li><a ng-class="{active: $state.includes('home')}" ui-sref="home">DASHBOARD</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('typography')}">
@@ -14,15 +14,15 @@
 				<span class="glyphicon glyphicon-text-size"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
-					<a ng-class="{active: $state.includes('typography')}" ui-sref="typography"><li>TYPOGRAPHY</li></a>
+					<li><a ng-class="{active: $state.includes('typography')}" ui-sref="typography">TYPOGRAPHY</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('grid')}">
-				<a href="">
+				<a ui-sref="grid">
 				<span class="glyphicon glyphicon-th-large"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
-					<a ui-sref="grid"><li>GRID</li></a>
+					<li><a ui-sref="grid">GRID</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('table')}">
@@ -30,17 +30,17 @@
 				<span class="glyphicon glyphicon-list"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
-					<a ng-class="{active: $state.includes('table')}" ui-sref="table"><li>TABLES</li></a>
+					<li><a ng-class="{active: $state.includes('table')}" ui-sref="table">TABLES</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('form')}">
 				<a href="#">
-				<span class="glyphicon glyphicon-equalizer"></span>
+					<span class="glyphicon glyphicon-equalizer"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
 					<li class="sidemenu-header">FORMS</li>
-					<a ng-class="{active: $state.includes('form')}" ui-sref="components"><li>Form Components</li></a>
-					<a ng-class="{active: $state.includes('form')}" ui-sref="elements"><li>Form Elements</li></a>
+					<li><a ng-class="{active: $state.includes('form')}" ui-sref="components">Form Components</a></li>
+					<li><a ng-class="{active: $state.includes('form')}" ui-sref="elements">Form Elements</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('ui-interface')}">
@@ -49,12 +49,13 @@
 				</a>
 				<ul class="nested-dropdown animated flipInX">
 					<li class="sidemenu-header">USER INTERFACE</li>
-					<a ui-sref="button"><li>Buttons</li></a>
-					<a ui-sref="icons"><li>Icons</li></a>
-					<a ui-sref="alerts"><li>Alerts</li></a>
-					<a ui-sref="progressbars"><li>Progressbars</li></a>
-					<a ui-sref="pagination"><li>Pagination</li></a>
-					<a ui-sref="other-elements"><li>Other Elements</li></a>
+					<li><a ui-sref="button">Buttons</a></li>
+					<li><a ui-sref="icons">Icons</a></li>
+					<li><a ui-sref="panels">Panels</a></li>
+					<li><a ui-sref="alerts">Alerts</a></li>
+					<li><a ui-sref="progressbars">Progressbars</a></li>
+					<li><a ui-sref="pagination">Pagination</a></li>
+					<li><a ui-sref="other-elements">Other Elements</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('charts')}">
@@ -63,8 +64,8 @@
 				</a>
 				<ul class="nested-dropdown animated flipInX">
 					<li class="sidemenu-header">CHARTS</li>	
-					<a ui-sref="chartjs"><li>Chart.js</li></a>
-					<a ui-sref="c3chart"><li>C3.js</li></a>
+					<li><a ui-sref="chartjs">Chart.js</a></li>
+					<li><a ui-sref="c3chart">C3.js</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('calendar')}"> 
@@ -72,7 +73,7 @@
 				<span class="glyphicon glyphicon-calendar"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
-					<a ui-sref="calendar"><li>CALENDAR</li></a>
+					<li><a ui-sref="calendar">CALENDAR</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('mail')}">
@@ -81,8 +82,8 @@
 				</a>
 				<ul class="nested-dropdown animated flipInX">
 					<li class="sidemenu-header">mail</li>
-					<a ui-sref="inbox"><li>Inbox</li></a>
-					<a ui-sref="compose"><li>Compose</li></a>
+					<li><a ui-sref="inbox">Inbox</a></li>
+					<li><a ui-sref="compose">Compose</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('pages')}">
@@ -91,10 +92,10 @@
 				</a>
 				<ul class="nested-dropdown animated flipInX">
 					<li class="sidemenu-header">PAGES</li>
-					<a ui-sref="blank"><li>Blank Page</li></a>
-					<a ui-sref="login"><li>Login</li></a>
-					<a ui-sref="signup"><li>Signup</li></a>
-					<a ui-sref="404-page"><li>404 page</li></a>
+					<li><a ui-sref="blank">Blank Page</a></li>
+					<li><a ui-sref="login">Login</a></li>
+					<li><a ui-sref="signup">Signup</a></li>
+					<li><a ui-sref="404-page">404 page</a></li>
 				</ul>
 			</li>
 		</ul>

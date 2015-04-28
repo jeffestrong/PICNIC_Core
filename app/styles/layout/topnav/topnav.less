@@ -200,3 +200,35 @@
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+.hidd {
+	display: none;
+}
+
+@media (max-width: 768px) { 
+	.topnav-navbar {
+		background: @brand-primary;
+	}
+	ul.hidd {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: -6px;
+		z-index: 3;
+		li.dropdown {
+			margin-right: 15px !important;
+			a {
+				padding-bottom: 8px !important;
+			}
+		}
+	}
+	.navbar-nav .open .dropdown-menu {
+  		position: absolute;
+  		right: 0;
+  		left: auto;
+  	}
+  	.navbar-brand {
+  		position: absolute;
+  		left: 32%;
+  	}
+
+}

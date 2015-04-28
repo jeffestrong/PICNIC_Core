@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('yapp')
+
+angular.module('AniTheme')
 	.directive('sidebarProfile',function(){
 		return {
         templateUrl:'scripts/directives/sidebar/sidebar-widgets/sidebar-profile/sidebar-profile.html',

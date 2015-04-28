@@ -2,21 +2,23 @@
 
 /**
 * @ngdoc overview
-* @name yapp
+* @name AniTheme
 * @description
-* # yapp
+* # AniTheme
 *
 * Main module of the application.
 */
 angular
-.module('yapp', [
+.module('AniTheme', [
     'ui.router',
     'ngAnimate',
     'ui.calendar',
     'chart.js',
+    'textAngular',
     'gridshore.c3js.chart',
     'angular-growl',
     'perfect_scrollbar',
+    'growlNotifications',
     'ui.bootstrap'
     ])
 .config(function($stateProvider, $urlRouterProvider) {
@@ -103,6 +105,11 @@ angular
         url: '/ui-interface/icons',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/icons.html'
+    })
+    .state('panels', {
+        url: '/ui-interface/panels',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/panel.html'
     })
     .state('alerts', {
         url: '/ui-interface/alerts',

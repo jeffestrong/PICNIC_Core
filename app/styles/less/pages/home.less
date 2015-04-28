@@ -3,20 +3,8 @@ section#body-container {
 	padding: 20px;
 	margin-top: 50px;
 	overflow: auto;
-	.home-row {
-		display: table;
-		min-width: 100%;
-		// border-spacing: 15px;
-		 > [class*="col-"] {
-		 	display: table-cell;
-		 	float: none;
-		 	vertical-align: top;
-		 	// padding: 0;
-		 }
-		 &:before, &:after {
-			display: none !important;
-		 }
-	}
+	.transition;
+
 	.home-stats {
 		
 		.hvr-wobble-horizontal {
@@ -71,19 +59,19 @@ section#body-container {
 
 			.c3 svg {
 				margin-left: -18px;
-				margin-bottom: -20px;
+				margin-bottom: -33px;
 			}
 			.c3-axis-x text {
-				fill: white;
+				fill: none;
 			}
 			.c3-axis-y text {
-				fill: white;
+				fill: none;
 			}
 			.c3 path {
-				stroke: white;
+				stroke: none;
 			}
 			.c3 line {
-				stroke: white;
+				stroke: none;
 			}
 		}
 		.top-left-chart {
@@ -137,3 +125,38 @@ section#body-container {
 }
 
 
+@media (min-width: 1024px) {
+	.home-container {
+		margin: 0 -20px;
+		.home-row {
+			display: table;
+			min-width: 100%;
+			border-spacing: 20px 0;
+			margin: 0;
+
+			> [class*="col-"] {
+			 	display: table-cell;
+			 	float: none;
+			 	vertical-align: top;
+			 	padding: 0;
+			 	div {
+			 		border-spacing: 0;
+			 	}
+			}
+
+			&:before, &:after {
+				display: none !important;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.home-charts-right {
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+	.todo-container {
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+}	

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('TooltipDemoCtrl', function ($scope) {
+angular.module('AniTheme').controller('TooltipDemoCtrl', function ($scope) {
   $scope.dynamicTooltip = 'Hello, World!';
   $scope.dynamicTooltipText = 'dynamic';
   $scope.htmlTooltip = 'I\'ve been made <b>bold</b>!';

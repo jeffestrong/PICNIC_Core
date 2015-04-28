@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('sidenavCtrl', function($scope, $location){
+angular.module('AniTheme').controller('sidenavCtrl', function($scope, $location){
 	$scope.selectedMenu = 'dashboard';
 	$scope.collapseVar = 0;
 

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+angular.module('AniTheme').controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
@@ -32,7 +32,7 @@ angular.module('yapp').controller('ModalDemoCtrl', function ($scope, $modal, $lo
   };
 });
 
-angular.module('yapp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+angular.module('AniTheme').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {
