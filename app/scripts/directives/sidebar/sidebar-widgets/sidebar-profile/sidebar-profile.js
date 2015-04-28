@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('yapp')
-	.directive('sidebarprofile',function(){
+	.directive('sidebarProfile',function(){
 		return {
         templateUrl:'scripts/directives/sidebar/sidebar-widgets/sidebar-profile/sidebar-profile.html',
         restrict: 'E',

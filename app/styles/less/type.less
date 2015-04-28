@@ -103,19 +103,19 @@ mark,
   color: @text-muted;
 }
 .text-primary {
-  .text-emphasis-variant(@brand-primary);
+  color: @brand-primary;
 }
 .text-success {
-  .text-emphasis-variant(@state-success-text);
+  color: @brand-success;
 }
 .text-info {
-  .text-emphasis-variant(@state-info-text);
+  color: @brand-info;
 }
 .text-warning {
-  .text-emphasis-variant(@state-warning-text);
+  color: @brand-warning;
 }
 .text-danger {
-  .text-emphasis-variant(@state-danger-text);
+  color: @brand-danger;
 }
 
 // Contextual backgrounds
@@ -125,19 +125,23 @@ mark,
   // Given the contrast here, this is the only class to have its color inverted
   // automatically.
   color: #fff;
-  .bg-variant(@brand-primary);
+  background-color: @brand-primary;
 }
 .bg-success {
-  .bg-variant(@state-success-bg);
+  color: #fff;
+  background-color: @brand-success;
 }
 .bg-info {
-  .bg-variant(@state-info-bg);
+  color: #fff;
+  background-color: @brand-info;
 }
 .bg-warning {
-  .bg-variant(@state-warning-bg);
+  color: #fff;
+  background-color: @brand-warning;
 }
 .bg-danger {
-  .bg-variant(@state-danger-bg);
+  color: #fff;
+  background-color: @brand-danger;
 }
 
 
