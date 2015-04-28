@@ -15,6 +15,7 @@ angular
     'ui.calendar',
     'chart.js',
     'gridshore.c3js.chart',
+    'growlNotifications',
     'ui.bootstrap'
     ])
 .config(function($stateProvider, $urlRouterProvider) {
