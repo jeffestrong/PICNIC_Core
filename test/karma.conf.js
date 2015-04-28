@@ -26,6 +26,7 @@ module.exports = function(config) {
       '../bower_components/d3/d3.js',
       '../bower_components/c3/c3.js',
       '../bower_components/c3-angular/c3js-directive.js',
+      '../bower_components/angular-growl/build/angular-growl.js',
       // endbower
       '../app/scripts/**/*.js',
       //'../test/mock/**/*.js',

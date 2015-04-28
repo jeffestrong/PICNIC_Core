@@ -17,12 +17,12 @@
 					<a ng-class="{active: $state.includes('typography')}" ui-sref="typography"><li>TYPOGRAPHY</li></a>
 				</ul>
 			</li>
-			<li>
+			<li ng-class="{active: $state.includes('grid')}">
 				<a href="">
 				<span class="glyphicon glyphicon-th-large"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
-					<a href=""><li>WIDGETS</li></a>
+					<a ui-sref="grid"><li>GRID</li></a>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('table')}">
