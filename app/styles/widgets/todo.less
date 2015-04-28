@@ -1,0 +1,56 @@
+.todo-container {
+	background: lighten(@brand-danger, 5%);
+	position: relative;
+	height: 350px;
+	.todo-header {
+		position: relative;
+		h4 {
+			color: #FFFFFF;
+			font-weight: 600;
+			padding-top: 12px;
+			font-size: 19px;
+			margin-top: 0;
+			.fa {
+				font-size: 26px;
+				position: relative;
+				top: 3px;
+				right: 2px;
+			}
+		}			
+	}
+	.todo-body {
+		height: 235px;
+		overflow: auto;
+		ul.todo-list {
+			color: white;
+			padding-left: 12px;
+			li {
+				padding-top: 9px;
+				padding-bottom: 9px;
+				font-size: 15px;
+				.checkbox1 input:checked + span:before {
+				  background: inherit;
+				  border-color: inherit;
+				  content: "\2713";
+				}
+				.checkbox1 {
+					padding-right: 7px;
+				}
+			}
+		}
+		.form-inline1 {
+			position: absolute;
+			bottom: 15px;
+			left: 15px;
+			width: 85%;
+			.form-control {
+				border-color: white;			
+			}
+			.btn {
+				background: inherit;
+				color: white;
+				border-color: white;
+			}
+		}
+	}
+}
