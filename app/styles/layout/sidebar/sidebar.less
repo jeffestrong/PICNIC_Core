@@ -113,19 +113,31 @@ aside#sidebar {
 						position: absolute;
 						top: 0;
 						background: #ECF0F1;
-						padding: 8px;
-						padding-top: 12px;
+						padding-left: 0px;
 						left: 66px;
 						width: 190px;
 						min-height: 40px;
 						transition: all 1s;	
 						li {
 							min-height: 24px;
+							a {
+								color: @brand-primary;
+								display: block;
+								padding-left: 8px;
+								padding-top: 12px;
+								&:hover, &:focus, &:active {
+									color: @brand-primary;
+									background: #ECF0F1;
+									text-decoration: none;
+								}
+							}
 
 						}		
 						li.sidemenu-header {
 							text-transform: uppercase;
-							min-height: 31px;
+							min-height:44px;
+							padding-top: 12px;
+							padding-left: 8px;
 							border-bottom: 1px solid lighten(@brand-primary, 6%)
 						}
 					}

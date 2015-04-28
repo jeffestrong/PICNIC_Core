@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
- angular.module('yapp').controller('todoCtrl', function ($scope) {
+ angular.module('AniTheme').controller('todoCtrl', function ($scope) {
  	$scope.todos = [
  	{text:'Meeting with Xian Lu.', done:false, id: 'option1'},         
  	{text:'Lern AngularJS.', done:false, id: 'option2'},         

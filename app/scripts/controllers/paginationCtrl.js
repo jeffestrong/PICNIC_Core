@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('PaginationDemoCtrl', function ($scope, $log) {
+angular.module('AniTheme').controller('PaginationDemoCtrl', function ($scope, $log) {
   $scope.totalItems = 64;
   $scope.currentPage = 4;
 

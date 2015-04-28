@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp')
+angular.module('AniTheme')
   .controller('LoginCtrl', function($scope, $location) {
 
     $scope.submit = function() {

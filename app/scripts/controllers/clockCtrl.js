@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('piechartCtrl', ['$scope', function ($scope) {
+angular.module('AniTheme').controller('piechartCtrl', ['$scope', function ($scope) {
    
     $scope.options1 = {
         animate:{

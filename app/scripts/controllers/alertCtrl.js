@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('AlertDemoCtrl', function ($scope) {
+angular.module('AniTheme').controller('AlertDemoCtrl', function ($scope) {
   $scope.alerts = [
     { type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.' },
     { type: 'info', msg: 'Ok! Not bad, but you can do better.' },

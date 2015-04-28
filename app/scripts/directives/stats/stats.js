@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('yapp')
+angular.module('AniTheme')
   .directive('stats',function(){
     return {
         templateUrl:'scripts/directives/stats/stats.html',

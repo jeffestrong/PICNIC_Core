@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('AccordionDemoCtrl', function ($scope) {
+angular.module('AniTheme').controller('AccordionDemoCtrl', function ($scope) {
   $scope.oneAtATime = true;
 
   $scope.groups = [

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name yapp.controller:MainCtrl
+ * @name AniTheme.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of AniTheme
  */
-angular.module('yapp').controller('ButtonsCtrl', function ($scope) {
+angular.module('AniTheme').controller('ButtonsCtrl', function ($scope) {
   $scope.singleModel = 1;
 
   $scope.radioModel = 'Middle';

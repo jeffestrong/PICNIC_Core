@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('yapp')
+angular.module('AniTheme')
 .directive('topnav',function(){
 	return {
     templateUrl:'scripts/directives/topnav/topnav.html',
