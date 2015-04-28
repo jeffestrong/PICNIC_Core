@@ -14,6 +14,7 @@ angular
     'ngAnimate',
     'ui.calendar',
     'chart.js',
+    'textAngular',
     'gridshore.c3js.chart',
     'growlNotifications',
     'ui.bootstrap'
@@ -102,6 +103,11 @@ angular
         url: '/ui-interface/icons',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/icons.html'
+    })
+    .state('panels', {
+        url: '/ui-interface/panels',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/panel.html'
     })
     .state('alerts', {
         url: '/ui-interface/alerts',

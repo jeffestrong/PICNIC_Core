@@ -200,3 +200,32 @@
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+.hidd {
+	display: none;
+}
+
+@media (max-width: 768px) { 
+	.topnav-navbar {
+		background: @brand-primary;
+	}
+	ul.hidd {
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: -6px;
+		z-index: 3;
+		li.dropdown {
+			a {
+				padding-bottom: 8px !important;
+			}
+		}
+	}
+	.navbar-nav .open .dropdown-menu {
+  		position: absolute;
+  	}
+  	.navbar-brand {
+  		position: absolute;
+  		left: 32%;
+  	}
+
+}

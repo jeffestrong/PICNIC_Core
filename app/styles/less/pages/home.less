@@ -4,20 +4,7 @@ section#body-container {
 	margin-top: 50px;
 	overflow: auto;
 	.transition;
-	.home-row {
-		display: table;
-		min-width: 100%;
-		// border-spacing: 15px;
-		 > [class*="col-"] {
-		 	display: table-cell;
-		 	float: none;
-		 	vertical-align: top;
-		 	// padding: 0;
-		 }
-		 &:before, &:after {
-			display: none !important;
-		 }
-	}
+	
 	.home-stats {
 		
 		.hvr-wobble-horizontal {
@@ -75,16 +62,16 @@ section#body-container {
 				margin-bottom: -33px;
 			}
 			.c3-axis-x text {
-				fill: white;
+				fill: none;
 			}
 			.c3-axis-y text {
-				fill: white;
+				fill: none;
 			}
 			.c3 path {
-				stroke: white;
+				stroke: none;
 			}
 			.c3 line {
-				stroke: white;
+				stroke: none;
 			}
 		}
 		.top-left-chart {
@@ -147,3 +134,30 @@ section#body-container {
 	    }
 	}
 }
+
+@media (min-width: 1024px) {
+	.home-row {
+		display: table;
+		min-width: 100%;
+		// border-spacing: 15px;
+		 > [class*="col-"] {
+		 	display: table-cell;
+		 	float: none;
+		 	vertical-align: top;
+		 	// padding: 0;
+		 }
+		 &:before, &:after {
+			display: none !important;
+		 }
+	}
+}
+@media (max-width: 768px) {
+	.home-charts-right {
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+	.todo-container {
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+}	

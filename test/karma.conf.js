@@ -27,6 +27,13 @@ module.exports = function(config) {
       '../bower_components/c3/c3.js',
       '../bower_components/c3-angular/c3js-directive.js',
       '../bower_components/angular-growl-notifications/dist/angular-growl-notifications.js',
+      '../bower_components/rangy/rangy-core.min.js',
+      '../bower_components/rangy/rangy-cssclassapplier.min.js',
+      '../bower_components/rangy/rangy-selectionsaverestore.min.js',
+      '../bower_components/rangy/rangy-serializer.min.js',
+      '../bower_components/textAngular/src/textAngular.js',
+      '../bower_components/textAngular/src/textAngular-sanitize.js',
+      '../bower_components/textAngular/src/textAngularSetup.js',
       // endbower
       '../app/scripts/**/*.js',
       //'../test/mock/**/*.js',

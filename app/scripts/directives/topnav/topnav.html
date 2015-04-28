@@ -9,7 +9,6 @@
 	    </button>
 		<a class="navbar-brand" ui-sref="home">Ani Theme</a>
 	</div>
-
 	<div class="collapse navbar-collapse">
 		<form class="navbar-form navbar-left" role="search">
 			<span class="glyphicon glyphicon-search"></span>
@@ -103,13 +102,22 @@
 				</ul>
 			</li>
 		</ul>	
+		
 		<ul class="nav navbar-nav pull-right">	
 			<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
 				<a href class="dropdown-toggle ureveal" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""> Ani Pascal</a>
-				<ul class="dropdown-menu animated flipInX">
+				<ul class="dropdown-menu">
 					<li><a ui-sref="login">Logout</a></li>
 				</ul>
 			</li>	
 		</ul>
 	</div>
+	<ul class="nav navbar-nav pull-right hidd">	
+		<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
+			<a href class="dropdown-toggle" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""></a>
+			<ul class="dropdown-menu animated flipInX">
+				<li><a ui-sref="login">Logout</a></li>
+			</ul>
+		</li>	
+	</ul>
 </nav>

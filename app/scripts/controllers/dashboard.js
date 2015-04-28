@@ -25,6 +25,7 @@ angular.module('AniTheme')
 	$scope.load = (function(){
 		$('#world-map').vectorMap({
 			backgroundColor: '#FFFFFF',	
+			zoomOnScroll: false,
 			regionStyle: {
 				initial: {
 					fill: '#CCC'
