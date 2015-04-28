@@ -1,20 +1,38 @@
 section#body-container {
 	margin-left: 235px;
-	padding: 15px;
+	padding: 20px;
 	margin-top: 50px;
 	overflow: auto;
+	.home-row {
+		display: table;
+		min-width: 100%;
+		// border-spacing: 15px;
+		 > [class*="col-"] {
+		 	display: table-cell;
+		 	float: none;
+		 	vertical-align: top;
+		 	// padding: 0;
+		 }
+		 &:before, &:after {
+			display: none !important;
+		 }
+	}
 	.home-stats {
-		padding: 12px;
+		
+		.hvr-wobble-horizontal {
+			display: block;
+		}
 		a {
 			color: inherit;
 		}
 	}
 	.home-charts-middle {
-		padding: 12px;
+		
 		.chart-container {
 			background: white;
 			padding: 0px;
 			position: relative;
+			min-height: 305px;
 			.chart-comment {
 			    position: absolute;
 			    left: 50px;
@@ -47,7 +65,7 @@ section#body-container {
 		}
 	}
 	.home-charts-right {
-		padding: 12px;
+	
 		.top-right-chart {
 			background: white;
 
@@ -70,11 +88,67 @@ section#body-container {
 		}
 		.top-left-chart {
 			background: white;
-			margin-top: 5px;
+			margin-top: 12px;
 			text-align: center;
 			.c3-chart-arc text {
 				display: none;
 			} 
+		}
+	}
+	.piechart-container {
+		display: inline-block;
+		.chart1, .chart2, .chart3 {
+			background: white;
+			display: inline-block;
+			
+			width: 100%;
+			text-align: center;
+			.easypie {
+				padding: 7px;
+			}
+			.chart-header {				
+				height: 28px;
+				padding-top: 3px;
+				margin-bottom: 2px;
+				font-size: 15px;
+				font-weight: 600;
+			}
+		}
+		.chart1 {
+			.chart-header {
+				background: @brand-warning;
+				color: white;
+			}	
+		}
+		.chart2 {
+			.chart-header {
+				background: @brand-primary;
+				color: white;
+			}	
+		}
+		.chart3 {
+			.chart-header {
+				background: @brand-danger;
+				color: white;
+			}	
+		}
+	}
+	.todo-container {
+		background: lighten(@brand-danger, 5%);
+		.todo-header {
+			position: relative;
+			h4 {
+				color: #FFFFFF;
+				font-weight: 600;
+				padding-top: 10px;
+				.fa {
+					font-size: 22px;
+					position: relative;
+					top: 3px;
+					right: 2px;
+				}
+			}
+			
 		}
 	}
 }

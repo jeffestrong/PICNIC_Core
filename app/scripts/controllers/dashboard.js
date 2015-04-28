@@ -22,6 +22,17 @@ angular.module('yapp')
 			$scope.multiCollapseVar = y;
 	};
 
-
-
-  });
+	$scope.load = (function(){
+		$('#world-map').vectorMap({
+			backgroundColor: '#FFFFFF',	
+			regionStyle: {
+				initial: {
+					fill: '#CCC'
+				},
+				hover: {
+					fill: "#3CA2E0"
+				}
+			}
+		});
+	});
+});	
