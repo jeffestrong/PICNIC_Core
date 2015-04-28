@@ -1,8 +1,9 @@
 section#body-container {
-	margin-left: 235px;
+	margin-left: @nav-width;
 	padding: 20px;
 	margin-top: 50px;
 	overflow: auto;
+	.transition;
 	.home-row {
 		display: table;
 		min-width: 100%;
@@ -134,4 +135,15 @@ section#body-container {
 		}
 	}
 	
+}
+
+.dashboard-page {
+  	&.push-left {
+	    aside#sidebar {
+	      left: -@nav-width;
+	    }
+	    #body-container {
+	      margin-left: 0;
+	    }
+	}
 }
