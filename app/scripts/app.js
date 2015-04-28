@@ -15,6 +15,7 @@ angular
     'ui.calendar',
     'chart.js',
     'gridshore.c3js.chart',
+    'angular-growl',
     'ui.bootstrap'
     ])
 .config(function($stateProvider, $urlRouterProvider) {
@@ -60,6 +61,11 @@ angular
         url: '/typography',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/typography.html'
+    })
+    .state('grid', {
+        url: '/grid',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/grid.html'
     })
     .state('blank', {
         url: '/blank',
