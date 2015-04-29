@@ -4,7 +4,7 @@ section#body-container {
 	margin-top: 50px;
 	overflow: auto;
 	.transition;
-	
+
 	.home-stats {
 		
 		.hvr-wobble-horizontal {
@@ -124,31 +124,30 @@ section#body-container {
 	
 }
 
-.dashboard-page {
-  	&.push-left {
-	    aside#sidebar {
-	      left: -@nav-width;
-	    }
-	    #body-container {
-	      margin-left: 0;
-	    }
-	}
-}
 
 @media (min-width: 1024px) {
-	.home-row {
-		display: table;
-		min-width: 100%;
-		// border-spacing: 15px;
-		 > [class*="col-"] {
-		 	display: table-cell;
-		 	float: none;
-		 	vertical-align: top;
-		 	// padding: 0;
-		 }
-		 &:before, &:after {
-			display: none !important;
-		 }
+	.home-container {
+		margin: 0 -20px;
+		.home-row {
+			display: table;
+			min-width: 100%;
+			border-spacing: 20px 0;
+			margin: 0;
+
+			> [class*="col-"] {
+			 	display: table-cell;
+			 	float: none;
+			 	vertical-align: top;
+			 	padding: 0;
+			 	div {
+			 		border-spacing: 0;
+			 	}
+			}
+
+			&:before, &:after {
+				display: none !important;
+			}
+		}
 	}
 }
 @media (max-width: 768px) {

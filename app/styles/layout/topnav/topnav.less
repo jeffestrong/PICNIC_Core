@@ -8,11 +8,11 @@
 	border-radius: 0;
 	border: none;
 	.navbar-header {
-		width: 235px;
+		width: @nav-width;
 		background: @brand-primary;
 		.navbar-brand {
 			color: lighten(@brand-primary, 35%);
-			width: 190px;
+			display: block;
 			&:hover {
 				color: lighten(@brand-primary, 40%);
 			}
@@ -211,10 +211,11 @@
 	ul.hidd {
 		display: block;
 		position: absolute;
-		right: 40px;
+		right: 0;
 		top: -6px;
 		z-index: 3;
 		li.dropdown {
+			margin-right: 15px !important;
 			a {
 				padding-bottom: 8px !important;
 			}
@@ -222,6 +223,8 @@
 	}
 	.navbar-nav .open .dropdown-menu {
   		position: absolute;
+  		right: 0;
+  		left: auto;
   	}
   	.navbar-brand {
   		position: absolute;

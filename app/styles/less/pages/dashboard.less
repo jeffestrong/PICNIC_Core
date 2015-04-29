@@ -7,6 +7,7 @@
 	bottom: 0;
   background: #ecf0f1;
   color: #666;
+  .transition;
 
     /*
      * Base structure
@@ -150,5 +151,16 @@
       right: -100px;
       top: 200px;
     }
+
+}
+
+@media(max-width: 768px) {
+
+  .dashboard-page {
+    left: -@nav-width;
+    &.push-right {
+      left: 0;
+    }
+  }
 
 }

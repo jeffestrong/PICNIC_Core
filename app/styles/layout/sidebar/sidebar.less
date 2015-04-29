@@ -3,9 +3,7 @@ aside#sidebar {
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	left: 0;
 	background: @brand-primary;
-	.transition;
 	div.side-widgets {
 		margin-left: 45px;
 		position: fixed;
@@ -28,10 +26,13 @@ aside#sidebar {
 			}
 		}
 		.widgets-content {
-			padding: 5px;
 			border-top: 1px solid darken(@brand-primary, 6%);
-			width: 188px;
+			width: @nav-width - 45px;
 			padding: 12px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			overflow: hidden;
 			.avatar-name {
 				padding-top: 12px;
 			}
@@ -102,7 +103,6 @@ aside#sidebar {
 						color: #D8F5FF;
 						border-radius: 0;
 						transition: all .12s linear;
-						height: 44px;
 						
 					}
 					a:hover, a:focus, a:active {			
@@ -120,27 +120,30 @@ aside#sidebar {
 						width: 190px;
 						min-height: 40px;
 						transition: all 1s;	
+						padding-top: 3px;
 						li {
 							min-height: 24px;
 							a {
 								color: @brand-primary;
 								display: block;
-								padding-left: 8px;
-								padding-top: 12px;
+								padding: 8px;
+								height: auto;
+
 								&:hover, &:focus, &:active {
-									color: @brand-primary;
+									color: darken(@brand-primary, 5%);
 									background: #ECF0F1;
 									text-decoration: none;
 								}
+
 							}
 
 						}		
 						li.sidemenu-header {
 							text-transform: uppercase;
-							min-height:44px;
-							padding-top: 12px;
+							min-height:38px;
+							padding-top: 8px;
 							padding-left: 8px;
-							border-bottom: 1px solid lighten(@brand-primary, 6%)
+							border-bottom: 1px solid lighten(@brand-primary, 6%);
 						}
 					}
 					&:hover {
