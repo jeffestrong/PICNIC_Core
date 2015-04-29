@@ -26,9 +26,10 @@
 		a {
 			color : #424242;
 			opacity: 0.9;
-			transition : all 0.1s ease-in-out;
-			&:hover {
+			.transition;
+			&:hover, &:active, &:focus {
 				color: #FFFFFF;
+				text-decoration: none;
 			}
 		}
 		.badge {
@@ -215,17 +216,12 @@ ul.main-options {
 	}
 }
 
-// .no-padding1 {
-// 	padding: 15px;
-// 	.row {
-// 		margin: -15px;
-// 	}
-// }
+
 
 .inbox-container {
 	border-radius: 5px 0 0 5px;
 	min-width: 170px;
-	background: lighten(#2E2E2E, 5%);
+	background: #4C4C4C;
 	color: #E7E7E7;
 	.butt-container {
 		padding: 16px;
@@ -252,9 +248,7 @@ ul.main-options {
 				opacity: 0.5;
 			}
 		li.activeli {
-
-
-				background: #4C4C4C;
+				background: darken(#4C4C4C, 5%);
 				.badge {
 					background: @brand-success;
 				}
