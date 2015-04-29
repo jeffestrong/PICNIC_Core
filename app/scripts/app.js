@@ -17,7 +17,6 @@ angular
     'textAngular',
     'gridshore.c3js.chart',
     'angular-growl',
-    'perfect_scrollbar',
     'growlNotifications',
     'ui.bootstrap'
     ])
