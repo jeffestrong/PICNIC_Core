@@ -78,6 +78,11 @@ angular
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/table.html'
     })
+    .state('profile', {
+        url: '/profile',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/profile.html'
+    })
     .state('elements', {
         url: '/form/elements',
         parent: 'dashboard',
