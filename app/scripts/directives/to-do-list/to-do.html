@@ -7,11 +7,11 @@
 			<div class="todo-list-wrap">
 				<ul class="todo-list">
 					<li ng-repeat="todo in todos">
-						<label class="checkbox1" for="{{todo.id}}"> 
+						<label class="checkbox1 animated bounceInUp" for="{{todo.id}}"> 
 							<input id="{{todo.id}}" type="checkbox" class="" ng-model="todo.done">
 							<span></span>
 						</label>
-						<span class="done-{{todo.done}}">{{todo.text}}</span>
+						<span class="done-{{todo.done}} animated bounceInRight">{{todo.text}}</span>
 					</li>
 				</ul>
 			</div>

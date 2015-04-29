@@ -9,8 +9,7 @@
  */
  angular.module('AniTheme').controller('todoCtrl', function ($scope) {
  	$scope.todos = [
- 	{text:'Meeting with Xian Lu.', done:false, id: 'option1'},         
- 	{text:'Lern AngularJS.', done:false, id: 'option2'},         
+ 	{text:'Meeting with Xian Lu.', done:false, id: 'option1'}, 
  	{text:'Exercise at 6:pm.', done:false, id: 'option3'},         
  	{text:'Avengers Age of Ultron.', done:false, id: 'option4'},         
  	{text: 'Sarah birthday', done:false, id: 'option5'}

@@ -2,6 +2,11 @@
 	ul {
 		list-style-type: none;
 	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 .topnav-navbar {
 	background: white;
@@ -178,28 +183,6 @@
   position: relative;
   overflow: hidden;
 }
-.ureveal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: @brand-primary;
-  height: 1.5px;
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-.ureveal:hover:before {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
 .hidd {
 	display: none;
 }
@@ -226,9 +209,8 @@
   		right: 0;
   		left: auto;
   	}
-  	.navbar-brand {
-  		position: absolute;
-  		left: 32%;
+  	.topnav-navbar .navbar-header {
+  		width: 100%;
   	}
 
 }

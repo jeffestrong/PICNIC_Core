@@ -50,6 +50,7 @@
 				<ul class="nested-dropdown animated flipInX">
 					<li class="sidemenu-header">USER INTERFACE</li>
 					<li><a ui-sref="button">Buttons</a></li>
+					<li><a ui-sref="dropdown">Dropdown</a></li>
 					<li><a ui-sref="icons">Icons</a></li>
 					<li><a ui-sref="panels">Panels</a></li>
 					<li><a ui-sref="alerts">Alerts</a></li>
@@ -69,7 +70,7 @@
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('calendar')}"> 
-				<a href="">
+				<a ui-sref="calendar">
 				<span class="glyphicon glyphicon-calendar"></span>
 				</a>
 				<ul class="nested-dropdown animated flipInX">
@@ -84,6 +85,14 @@
 					<li class="sidemenu-header">mail</li>
 					<li><a ui-sref="inbox">Inbox</a></li>
 					<li><a ui-sref="compose">Compose</a></li>
+				</ul>
+			</li>
+			<li ng-class="{active: $state.includes('invoice')}"> 
+				<a ui-sref="invoice">
+				<span class="glyphicon glyphicon-list-alt"></span>
+				</a>
+				<ul class="nested-dropdown animated flipInX">
+					<li><a ui-sref="invoice">Invoice</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('pages')}">

@@ -17,7 +17,6 @@ angular
     'textAngular',
     'gridshore.c3js.chart',
     'angular-growl',
-    'perfect_scrollbar',
     'growlNotifications',
     'ui.bootstrap'
     ])
@@ -101,6 +100,12 @@ angular
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/ui-elements/button.html'
     }) 
+
+    .state('dropdown', {
+        url: '/ui-interface/dropdown',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/ui-elements/dropdown.html'
+    }) 
     .state('other-elements', {
         url: '/ui-interface/other-elements',
         parent: 'dashboard',
@@ -148,7 +153,12 @@ angular
         url: '/calendar',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/calendar.html'
-    })      
+    })
+    .state('invoice', {
+        url: '/invoice',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/invoice.html'
+    })
     .state('inbox', {
         url: '/mail/inbox',
         parent: 'dashboard',
