@@ -27,7 +27,7 @@ module.exports = function(config) {
       '../bower_components/c3/c3.js',
       '../bower_components/c3-angular/c3js-directive.js',
       '../bower_components/angular-growl/build/angular-growl.js',
-      '../bower_components/perfect-scrollbar/src/perfect-scrollbar.js',
+      '../bower_components/perfect-scrollbar/js/perfect-scrollbar.js',
       '../bower_components/angular-perfect-scrollbar-4.1.1fixed/src/angular-perfect-scrollbar.js',
       '../bower_components/angular-growl-notifications/dist/angular-growl-notifications.js',
       '../bower_components/rangy/rangy-core.min.js',
