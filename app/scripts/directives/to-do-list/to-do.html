@@ -7,7 +7,7 @@
 			<div class="todo-list-wrap">
 				<ul class="todo-list">
 					<li ng-repeat="todo in todos">
-						<label class="checkbox1 animated bounceInUp" for="{{todo.id}}"> 
+						<label class="checkbox1 animated bounceInRight" for="{{todo.id}}"> 
 							<input id="{{todo.id}}" type="checkbox" class="" ng-model="todo.done">
 							<span></span>
 						</label>
@@ -21,7 +21,7 @@
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="" ng-model="formTodoText" ng-model-instant >
 							<span class="input-group-btn">
-								<button class="btn btn-default" ng-click="addTodo()" type="button">Add</button>
+								<button class="btn btn-default" ng-click="addTodo()" type="submit">Add</button>
 							</span>
 				    	</div>	
 				    </div>				
