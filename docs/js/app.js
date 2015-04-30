@@ -8,10 +8,7 @@ app.controller('todoCtrl', function ($scope) {
  	{text:'Avengers Age of Ultron.', done:false, id: 'option4'},         
  	{text: 'Sarah birthday', done:false, id: 'option5'}
  	];
- 	$scope.getTotalTodos = function () {
- 		return $scope.todos.length;
- 	};
- 	function makeid()
+  	function makeid()
  	{
  		var text = "";
  		var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -26,11 +23,6 @@ app.controller('todoCtrl', function ($scope) {
  		$scope.formTodoText = '';
  	};
 
- 	$scope.clearCompleted = function () {
- 		$scope.todos = _.filter($scope.todos, function(todo){
- 			return !todo.done;
- 		});
- 	};
  });
 app.directive('todolist',function(){
 		return {
