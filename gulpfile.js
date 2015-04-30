@@ -11,6 +11,7 @@ gulp.task('styles', function() {
     .pipe($.plumber())
     .pipe($.less())
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
+    .pipe(gulp.dest('dist/styles'))
     .pipe(gulp.dest('.tmp/styles'));
 });
 
@@ -146,7 +147,7 @@ gulp.watch('app/styles/**/*.less', ['styles']);
 gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('builddist', ['jshint', 'jscs', 'html', 'images', 'fonts', 'extras'],
+gulp.task('builddist', ['jshint', 'html', 'images', 'fonts', 'extras', 'styles'],
     function() {
         return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
     });
