@@ -17,10 +17,15 @@ angular
     'textAngular',
     'gridshore.c3js.chart',
     'angular-growl',
-    'growlNotifications',
+    'growlNotifications',    
+    'angular-loading-bar',
     'ui.bootstrap'
     ])
-.config(function($stateProvider, $urlRouterProvider) {
+    .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+        cfpLoadingBarProvider.latencyThreshold = 5;
+          cfpLoadingBarProvider.includeSpinner = false;
+      }])
+    .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when('/dashboard', '/dashboard/home');
     $urlRouterProvider.otherwise('login');

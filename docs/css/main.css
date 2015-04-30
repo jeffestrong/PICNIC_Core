@@ -7504,11 +7504,11 @@ img.profile-photo {
   display: table;
   width: 100%;
 }
-.invoice .invoice-logo .dashy-left {
+.invoice .invoice-logo .ani-left {
   display: table-cell;
   vertical-align: middle;
 }
-.invoice .invoice-logo .dashy-right {
+.invoice .invoice-logo .ani-right {
   display: table-cell;
   vertical-align: middle;
 }
