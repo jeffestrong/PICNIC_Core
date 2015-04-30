@@ -1,4 +1,4 @@
-section#body-container {
+#body-container {
 	margin-left: @nav-width;
 	padding: 20px;
 	margin-top: 50px;
@@ -160,3 +160,22 @@ section#body-container {
 		margin-bottom: 13px;
 	}
 }	
+
+
+@media(max-width: 768px) {
+  #body-container {
+    margin-left: 0;
+    width: 100%;
+  } 
+  .dashboard-page {
+    margin-left: -@nav-width;
+    position: static;
+
+    &.push-right {
+      margin-left: 0;
+      #body-container {
+        margin-left: @nav-width;
+      } 
+    }
+  }
+}

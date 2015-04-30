@@ -1,15 +1,26 @@
-aside#sidebar {
+#sidebar {
 	width: @nav-width;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	background: @brand-primary;
+	.sidenav-outer {
+		position: absolute;
+		top:50px;
+		bottom:0;
+		left:0;
+		right: 0;
+		overflow: hidden;
+	}
 	div.side-widgets {
 		margin-left: 45px;
-		position: fixed;
 		color: #D8F5FF;
-		top: 50px;
-		bottom: 0;
+		float: left;
+		border-top: 1px solid darken(@brand-primary, 6%);
+		width: @nav-width - 45px;
+		position: absolute;
+		left: 0;
+
 		.widgets-header {
 			text-align: center;
 			padding: 15px;
@@ -26,12 +37,7 @@ aside#sidebar {
 			}
 		}
 		.widgets-content {
-			border-top: 1px solid darken(@brand-primary, 6%);
-			width: @nav-width - 45px;
 			padding: 12px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
 			overflow: hidden;
 			.avatar-name {
 				padding-top: 12px;
@@ -82,9 +88,11 @@ aside#sidebar {
 	div.side-menu {
 		width: 45px;
 		background: darken(@brand-primary, 10%);
-		position: fixed;
-		top: 50px;
+		position: absolute;
+		top: 0;
 		bottom: 0;
+		z-index: 999;
+		float: left;
 		.menu-header {
 			height: 50px;
 			padding: 8px;

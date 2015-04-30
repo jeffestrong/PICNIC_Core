@@ -6,5 +6,5 @@ angular.module('AniTheme')
         templateUrl:'scripts/directives/sidebar/menu-bar/menu-bar.html',
         restrict: 'E',
         replace: true,
-    	}
-	});
+    }
+});
