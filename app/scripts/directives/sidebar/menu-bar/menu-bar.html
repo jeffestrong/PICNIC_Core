@@ -34,17 +34,17 @@
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('form')}">
-				<a href="#">
+				<a ui-sref="elements">
 					<span class="glyphicon glyphicon-equalizer"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
 					<li class="sidemenu-header">FORMS</li>
-					<li><a ng-class="{active: $state.includes('form')}" ui-sref="components">Form Components</a></li>
 					<li><a ng-class="{active: $state.includes('form')}" ui-sref="elements">Form Elements</a></li>
+					<li><a ng-class="{active: $state.includes('form')}" ui-sref="components">Form Components</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('ui-interface')}">
-				<a href="">
+				<a ui-sref="button">
 				<span class="glyphicon glyphicon-cloud-download"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
@@ -60,7 +60,7 @@
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('charts')}">
-				<a href="">
+				<a ui-sref="chartjs">
 				<span class="glyphicon glyphicon-signal"></span>	
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
@@ -78,7 +78,7 @@
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('mail')}">
-				<a href="">
+				<a ui-sref="inbox">
 				<span class="glyphicon glyphicon-envelope"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
@@ -96,7 +96,7 @@
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('pages')}">
-				<a href="">
+				<a ui-sref="blank">
 				<span class="glyphicon glyphicon-duplicate"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
