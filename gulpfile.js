@@ -8,7 +8,14 @@ var $ = require('gulp-load-plugins')();
 
 
 gulp.task('styles', function() {
-    return gulp.src('app/styles/main.less')
+    return gulp.src([
+        'app/styles/app-blue.less',
+        'app/styles/app-green.less',
+        'app/styles/app-red.less',
+        'app/styles/app-purple.less',
+        'app/styles/app-lynch.less',
+        'app/styles/app-midnight-blue.less'
+        ])
     .pipe($.plumber())
     .pipe($.less())
     .pipe($.autoprefixer({browsers: ['last 1 version']}))

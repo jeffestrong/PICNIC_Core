@@ -176,6 +176,53 @@
 			}
 		}
 	}
+	ul.color-picker {
+		position: absolute;
+		right: 200px;
+		li {
+			a {
+				&:hover {
+					color: white;
+					background: @brand-primary;
+				}
+			}
+			table.color-swatches-table {
+				margin-bottom: 0;
+				a {
+					padding-left: 0;
+					display: block;
+					&:hover, &:focus {
+						color: inherit;
+						background: inherit;
+					}
+					.blue-base {
+						color: #3CA2E0;
+					}
+					.red-base {
+						color: #D24D57;
+					}
+					.green-base {
+						color: #27ae60;
+					}
+					.purple-base {
+						color: #8e44ad ;
+					}
+					.midnight-blue-base {
+						color: #2c3e50;
+					}
+					.lynch-base {
+						color: #6C7A89;
+					}
+				}
+				td.colorr {
+					border: 1px solid lighten(@brand-primary, 30%);
+				}
+			}
+			ul.dropdown-menu {
+				border-top: none !important;
+			}
+		}
+	}
 }
 .ureveal {
   display: inline-block;

@@ -103,6 +103,55 @@
 			</li>
 		</ul>	
 		<button class="btn btn-primary" style="position: absolute; top: 8px; right: 270px;">BUY NOW</button>
+		<ul class="nav navbar-nav color-picker">
+			<li class="dropdown" dropdown on-toggle="toggled(open)">
+	            <a href class="dropdown-toggle notoggle" dropdown-toggle>
+	                <span><i class="fa fa-circle"></i></span>
+	            </a>
+	            <ul class="dropdown-menu" role="menu">
+	                <li class="padder-h-xs">
+	                    <table class="table color-swatches-table text-center no-m-b">
+	                        <tr>
+	                            <td class="text-center colorr">
+	                                <a href="javascript:;" ng-click="changeTheme('blue')" class="theme-picker">
+	                                    <i class="fa fa-circle blue-base"></i>
+	                                </a>
+	                            </td>
+	                            <td class="text-center colorr">
+	                                <a href="javascript:;" ng-click="changeTheme('green')" class="theme-picker">
+	                                    <i class="fa fa-circle green-base"></i>
+	                                </a>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="text-center colorr">
+	                                <a href="javascript:;" ng-click="changeTheme('red')" class="theme-picker">
+	                                    <i class="fa fa-circle red-base"></i>
+	                                </a>
+	                            </td>
+	                            <td class="text-center colorr">
+	                                <a href="javascript:;" ng-click="changeTheme('purple')" class="theme-picker">
+	                                    <i class="fa fa-circle purple-base"></i>
+	                                </a>
+	                            </td>
+	                        </tr>
+	                         <tr>
+	                            <td class="text-center colorr">
+	                                <a href="javascript:;" ng-click="changeTheme('midnight-blue')" class="theme-picker">
+	                                    <i class="fa fa-circle midnight-blue-base"></i>
+	                                </a>
+	                            </td>
+	                            <td class="text-center colorr">
+	                                <a href="javascript:;" ng-click="changeTheme('lynch')" class="theme-picker">
+	                                    <i class="fa fa-circle lynch-base"></i>
+	                                </a>
+	                            </td>
+	                        </tr>
+	                    </table>
+	                </li>
+	            </ul>
+	        </li>
+        </ul>
 		<ul class="nav navbar-nav pull-right">	
 			<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
 				<a href class="dropdown-toggle" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""> Ani Pascal</a>
