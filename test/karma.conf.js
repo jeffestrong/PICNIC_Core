@@ -37,6 +37,7 @@ module.exports = function(config) {
       '../bower_components/textAngular/src/textAngular-sanitize.js',
       '../bower_components/textAngular/src/textAngularSetup.js',
       '../bower_components/perfect-scrollbar/js/perfect-scrollbar.js',
+      '../bower_components/classie/classie.js',
       // endbower
       '../app/scripts/**/*.js',
       //'../test/mock/**/*.js',
