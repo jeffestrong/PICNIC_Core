@@ -1,12 +1,11 @@
 #body-container {
 	margin-left: @nav-width;
-	padding: 20px;
+	padding: 10px;
 	margin-top: 50px;
 	overflow: auto;
 	.transition;
 
 	.home-stats {
-		
 		.hvr-wobble-horizontal {
 			display: block;
 		}
@@ -15,17 +14,15 @@
 		}
 	}
 	.home-charts-middle {
-		
 		.chart-container {
-			background: white;
+			.box;
 			padding: 0px;
 			position: relative;
-			min-height: 305px;
+			min-height: 285px;
 			.chart-comment {
 			    position: absolute;
-			    left: 50px;
-			    top: 10px;
-			    color: @brand-success;
+			    left: 15px;
+			    top: 15px;
 			    .comment-header {
 					font-weight: 600;
 					font-size: 23px;
@@ -55,11 +52,11 @@
 	.home-charts-right {
 	
 		.top-right-chart {
-			background: white;
+			.box;
 
 			.c3 svg {
-				margin-left: -18px;
-				margin-bottom: -33px;
+				margin-left: -10px;
+				margin-bottom: -34px;
 			}
 			.c3-axis-x text {
 				fill: none;
@@ -75,8 +72,8 @@
 			}
 		}
 		.top-left-chart {
-			background: white;
-			margin-top: 12px;
+			.box;
+			margin-top: 10px;
 			text-align: center;
 			.c3-chart-arc text {
 				display: none;
@@ -86,7 +83,7 @@
 	.piechart-container {
 		display: inline-block;
 		.chart1, .chart2, .chart3 {
-			background: white;
+			.box;
 			display: inline-block;
 			
 			width: 100%;
@@ -124,14 +121,18 @@
 	
 }
 
+.box {
+	background-color: #fff;
+	border: solid 1px @border-color;
+}
 
 @media (min-width: 1024px) {
 	.home-container {
-		margin: 0 -20px;
+		margin: 0 -10px 0;
 		.home-row {
 			display: table;
 			min-width: 100%;
-			border-spacing: 20px 0;
+			border-spacing: 10px 0;
 			margin: 0;
 
 			> [class*="col-"] {
@@ -150,6 +151,13 @@
 		}
 	}
 }
+
+.heading {
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
 	.home-charts-right {
 		margin-top: 13px;

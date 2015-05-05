@@ -1,13 +1,17 @@
-<div class="stat">
-	<div class="stat-icon">
-		<i class="fa fa-{{icon}} fa-4x {{bgclass}}"></i>
+<a href="{{url}}" class="stat hvr-wobble-horizontal">
+	<div class=" stat-icon">
+		<i class="fa fa-{{icon}} fa-4x text-{{bgclass}}"></i>
 	</div>
-	<div class="stat-label">
+	<div class=" stat-label">
 		<div class="label-header">
 			{{value}}
 		</div>
-		<div class="label-body">
-			{{text}}
-		</div>	
+		<progressbar value="89" type="{{bgclass}}" class="progress-sm"></progressbar>  
+		<div class="clearfix stat-detail">
+	
+			<div class="label-body">
+				<i class="fa fa-arrow-circle-o-right pull-right text-muted"></i> {{text}}
+			</div>
+		</div>
 	</div>
-</div>
+</a>

@@ -2,30 +2,40 @@
 <div class="conter-wrapper home-container">
 	<div class="row home-row">
 		<div class="col-md-4 col-lg-3">
-			<div class="home-stats text-center">
-				<a href="" class="hvr-wobble-horizontal"><stats icon="cloud-upload" value="88%" text="Server uptime" bgclass="info"></stats></a>
-				<a href="" class="hvr-wobble-horizontal"><stats icon="heartbeat" value="94%" text="Positive feedback" bgclass="success"></stats></a>
-				<a href="" class="hvr-wobble-horizontal"><stats icon="flag" value="12,351" text="Posts flagged" bgclass="danger"></stats></a>
+			<div class="home-stats">
+				<stats icon="cloud-upload" value="88%" text="Server uptime" bgclass="info" url="#"></stats>
+				<stats icon="heartbeat" value="94%" text="Positive feedback" bgclass="success" url="#"></stats>
+				<stats icon="flag" value="12,351" text="Posts flagged" bgclass="danger" url="#"></stats>
 			</div>
 		</div>
 		<div class="col-md-4 col-lg-6">
 			<div class="home-charts-middle">
 				<div class="chart-container">
-					<div class="chart-comment">
-						<div class="comment-header">
-							53%
+					<div class="chart-comment clearfix">
+						<div class="text-primary pull-left">
+							<span class="comment-header">55%</span><br />
+							<span class="comment-comment">Referral user</span>
 						</div>
-						<div class="comment-comment">
-							Female users
+
+						<div class="text-success pull-left m-l">
+							<span class="comment-header">25%</span><br />
+							<span class="comment-comment">Returning user</span>
+						</div>
+
+						<div class="text-warning pull-left m-l">
+							<span class="comment-header">20%</span><br />
+							<span class="comment-comment">New User</span>
 						</div>
 					</div>
+
 					<c3chart bindto-id="line-chart">
-					    <chart-column column-id="Male" column-values="18,33,27,36,47,55,50,67,74,78,71,85" column-type="line"/>  
-					    <chart-column column-id="Female" column-values="39,47,56,42,57,62,71,65,69,77,84, 91" column-type="line"/>  
-					    <chart-legend show-legend="false"/>  
-					    <chart-tooltip-show-tooltip="false"/>					   
-					    <chart-colors color-pattern="#3CA2E0, #7BB77D "/>  
-					    <chart-size chart-height="300" width="450" />
+					    <chart-column column-id="New User" column-values="25,33,27,36,17,15,28,37,44,78,11,85" column-type="line"/>  
+					    <chart-column column-id="Returning user" column-values="6,47,56,42,36,67,15,65,69,77,84,91" column-type="line"/>  
+					    <chart-column column-id="Referral user" column-values="10,36,47,55,50,27,62,27,65,69,77,71" column-type="line"/>  
+					    <chart-legend show-legend="true"/>  
+					    <chart-tooltip-show-tooltip="true"/>					   
+					    <chart-colors color-pattern="#3CA2E0, #7BB77D, #f0ad4e "/>  
+					    <chart-size chart-height="285" width="100%" />
 					</c3chart>
 				</div>
 			</div>
@@ -34,24 +44,34 @@
 			<div class="home-charts-right">
 				<div class="top-right-chart">
 					<c3chart bindto-id="bar-chart">
-					    <chart-column column-id="Users" column-values="33,27,36,47,55,37,32,39,28,21" column-type="bar"/>  
+					    <chart-column column-id="Users" column-values="33,27,36,47,55,37,32,39,28,21,37,42,32,26,18" column-type="bar"/>  
 					    <chart-legend show-legend="false"/>  
 					    <chart-tooltip-show-tooltip="false"/>					   
 					    <chart-colors color-pattern="#d9534f"/>  
-					    <chart-size chart-height="175" width="400" />
+					    <chart-size chart-height="156" width="400" />
 					</c3chart>					
 				</div>
 				<div class="bottom-right-chart">
-					<div class="top-left-chart">
-						<c3chart bindto-id="pie-chart">
-						    <chart-column column-id="data-1" column-values="10" column-type="pie"/>    
-			                <chart-column column-id="data-2" column-values="30" column-type="pie"/>      
-						    <chart-column column-id="data-3" column-values="5" column-type="pie"/>  					    
-						    <chart-legend show-legend="false"/> 
-						    <chart-tooltip-show-tooltip="false"/>	 
-						    <chart-colors color-pattern="#5CB85C,#3CA2E0,#f0ad4e"/>  
-						    <chart-size chart-height="146" chart-width="150"/>					    
-						</c3chart>
+					<div class="top-left-chart clearfix">
+						<div class="row">
+							<div class="col-sm-6 text-left">
+								<div class="padder">
+									<span class="heading">Total Views: </span>
+									<big class="text-primary">22068</big>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<c3chart bindto-id="pie-chart">
+								    <chart-column column-id="New" column-values="10" column-type="pie"/>    
+					                <chart-column column-id="Returning" column-values="30" column-type="pie"/>      
+								    <chart-column column-id="Referral" column-values="5" column-type="pie"/>  					    
+								    <chart-legend show-legend="false"/> 
+								    <chart-tooltip-show-tooltip="false"/>	 
+								    <chart-colors color-pattern="#5CB85C,#3CA2E0,#f0ad4e"/>  
+								    <chart-size chart-height="145" chart-width="100"/>					    
+								</c3chart>
+							</div>
+						</div>
 					</div>	
 				</div>
 			</div>
@@ -59,7 +79,7 @@
 	</div>
 	<div class="row home-row">
 		<div class="col-lg-8 col-md-6">
-			<div class="map-container" ng-init="load()">
+			<div class="map-container box" ng-init="load()">
 				<div id="world-map" style="width: 100%; height: 350px"></div>
 			</div>
 		</div>

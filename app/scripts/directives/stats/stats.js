@@ -10,7 +10,8 @@ angular.module('AniTheme')
           'icon': '@',
           'value': '@',
           'text': '@',
-          'bgclass': '@'
+          'bgclass': '@' ,
+          'url': '@'
         }
       }
   });
