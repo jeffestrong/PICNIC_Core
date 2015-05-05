@@ -9,10 +9,10 @@
  */
  angular.module('AniTheme').controller('todoCtrl', function ($scope) {
  	$scope.todos = [
- 	{text:'Meeting with Xian Lu.', done:false, id: 'option1'}, 
- 	{text:'Exercise at 6:pm.', done:false, id: 'option3'},         
+ 	{text:'Meeting with Nabindar Singh.', done:false, id: 'option1'}, 
+ 	{text:'Exercise at 6:pm with Nicholas.', done:false, id: 'option3'},         
  	{text:'Avengers Age of Ultron.', done:false, id: 'option4'},         
- 	{text: 'Sarah birthday', done:false, id: 'option5'}
+ 	{text: 'Henna birthday at Mezbaan.', done:false, id: 'option5'}
  	];
  	function makeid()
  	{

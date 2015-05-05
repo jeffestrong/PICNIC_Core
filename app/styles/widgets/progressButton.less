@@ -43,8 +43,8 @@
 .progress-button .content::before,
 .progress-button .content::after  {
 	position: absolute;
-	right: 20px;
-	color: darken(@brand-primary, 15%);
+	right: 10px;
+	color: darken(@brand-primary, 12%);
 	font-family: "icomoon";
 	opacity: 0;
 	-webkit-transition: opacity 0.3s 0.3s;
@@ -52,14 +52,14 @@
 }
 
 .progress-button .content::before {
-	content: "\e600"; /* Checkmark for primary */
+	content: "\e600"; /* Checkmark for success */
 }
 
 .progress-button .content::after {
 	content: "\e601"; /* Cross for error */
 }
 
-.progress-button.state-primary .content::before,
+.progress-button.state-success .content::before,
 .progress-button.state-error .content::after {
 	opacity: 1;
 }
@@ -76,7 +76,7 @@
 .progress-button .progress-inner {
 	position: absolute;
 	left: 0;
-	background: darken(@brand-primary, 15%);
+	background: darken(@brand-primary, 12%);
 }
 
 .progress-button[data-horizontal] .progress-inner {
@@ -151,7 +151,7 @@
 	transform: translateX(-50%);
 }
 
-.progress-button[data-style="fill"][data-horizontal].state-primary .content,
+.progress-button[data-style="fill"][data-horizontal].state-success .content,
 .progress-button[data-style="fill"][data-horizontal].state-error .content {
 	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
@@ -181,7 +181,7 @@
 	transform: translateX(-50%);
 }
 
-.progress-button[data-style="fill"][data-vertical].state-primary .content,
+.progress-button[data-style="fill"][data-vertical].state-success .content,
 .progress-button[data-style="fill"][data-vertical].state-error .content {
 	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
@@ -221,7 +221,7 @@
 	opacity: 0;
 }
 
-.progress-button[data-style="shrink"][data-horizontal].state-primary .content,
+.progress-button[data-style="shrink"][data-horizontal].state-success .content,
 .progress-button[data-style="shrink"][data-horizontal].state-error .content {
 	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
@@ -255,7 +255,7 @@
 	opacity: 0;
 }
 
-.progress-button[data-style="shrink"][data-vertical].state-primary .content,
+.progress-button[data-style="shrink"][data-vertical].state-success .content,
 .progress-button[data-style="shrink"][data-vertical].state-error .content {
 	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
@@ -568,7 +568,7 @@
 .progress-button[data-style="top-line"] .content::after {
 	right: auto;
 	left: 100%;
-	margin-left: 25px;
+	margin-left: 15px;
 }
 
 /* lateral-lines */
@@ -576,8 +576,8 @@
 
 .progress-button[data-style="lateral-lines"] .progress-inner {
 	width: 100%;
-	border-right: 3px solid darken(@brand-primary, 15%);
-	border-left: 3px solid darken(@brand-primary, 15%);
+	border-right: 3px solid darken(@brand-primary, 12%);
+	border-left: 3px solid darken(@brand-primary, 12%);
 	background: transparent;
 }
 
@@ -585,5 +585,5 @@
 .progress-button[data-style="lateral-lines"] .content::after {
 	right: auto;
 	left: 100%;
-	margin-left: 25px;
+	margin-left: 15px;
 }
