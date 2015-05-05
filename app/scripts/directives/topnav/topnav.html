@@ -102,9 +102,12 @@
 				</ul>
 			</li>
 		</ul>	
-		<a href="http://www.strapui.com/themes/ani-angularjs-theme/"><button class="btn btn-primary" style="position: absolute; top: 8px; right: 270px;">BUY NOW</button></a>
-		<ul class="nav navbar-nav color-picker">
-			<li class="dropdown" dropdown on-toggle="toggled(open)">
+		
+		<ul class="nav navbar-nav pull-right">	
+			<li>
+				<a class="active" href="http://www.strapui.com/themes/ani-angularjs-theme/" style="margin-right: 15px;">BUY NOW</a>
+			</li>
+			<li class="dropdown color-picker" dropdown on-toggle="toggled(open)">
 	            <a href class="dropdown-toggle notoggle" dropdown-toggle>
 	                <span><i class="fa fa-circle"></i></span>
 	            </a>
@@ -122,20 +125,18 @@
 	                                    <i class="fa fa-circle green-base"></i>
 	                                </a>
 	                            </td>
-	                        </tr>
-	                        <tr>
 	                            <td class="text-center colorr">
 	                                <a href="javascript:;" ng-click="changeTheme('red')" class="theme-picker">
 	                                    <i class="fa fa-circle red-base"></i>
 	                                </a>
 	                            </td>
-	                            <td class="text-center colorr">
+	                        </tr>
+	                        <tr>
+	                         	<td class="text-center colorr">
 	                                <a href="javascript:;" ng-click="changeTheme('purple')" class="theme-picker">
 	                                    <i class="fa fa-circle purple-base"></i>
 	                                </a>
 	                            </td>
-	                        </tr>
-	                         <tr>
 	                            <td class="text-center colorr">
 	                                <a href="javascript:;" ng-click="changeTheme('midnight-blue')" class="theme-picker">
 	                                    <i class="fa fa-circle midnight-blue-base"></i>
@@ -151,8 +152,6 @@
 	                </li>
 	            </ul>
 	        </li>
-        </ul>
-		<ul class="nav navbar-nav pull-right">	
 			<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
 				<a href class="dropdown-toggle" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""> Ani Pascal</a>
 				<ul class="dropdown-menu pull-right">
@@ -165,7 +164,8 @@
 	<ul class="nav navbar-nav pull-right hidd">	
 		<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
 			<a href class="dropdown-toggle" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""></a>
-			<ul class="dropdown-menu">
+			<ul class="dropdown-menu pull-right">
+				<li><a ui-sref="profile">Profile</a></li>
 				<li><a ui-sref="login">Logout</a></li>
 			</ul>
 		</li>	

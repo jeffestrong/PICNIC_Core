@@ -1,42 +1,37 @@
-.stat {
-	background: white;
-	display: table;
-	min-width: 100%;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	margin-bottom: 20px;
+a.stat {
+	.box;
+	display: table !important;
+	width: 100%;
+	padding: 10px;
 	height: 89px;
-	.stat-icon {
+	margin-bottom: 10px;
+	text-align: left;
+	.stat-icon, .stat-label {
 		display: table-cell;
 		vertical-align: middle;
-		text-align: center;
-		width: 90px;
-		
-		.primary {
-			color: @brand-primary;
-		}
-		.info {
-			color: @brand-info;
-		}
-		.warning {
-			color: @brand-warning;
-		}
-		.success {
-			color: @brand-success;
-		}
-		.danger {
-			color: @brand-danger;
-		}
+	}
+	.stat-icon {
+		margin-top: 5px;
+		width: 75px;
 	}
 	.stat-label {
-		padding-left: 15px;
-		display: table-cell;
-		vertical-align: middle;
 		.label-header {
 			font-size: 22px;
 		}
-		.label-body {
-			font-size: 12px;
+	}
+	.stat-detail {
+		margin-top: 10px;
+		font-size: 14px;
+		color: #666;
+		i {
+			margin-top: 5px;
 		}
+	}
+}
+
+.progress-sm {
+	&.progress {
+		height: 5px;
+		margin-bottom: 0;
 	}
 }
