@@ -1,10 +1,8 @@
 .todo-container {
-	background: @brand-danger;
 	position: relative;
 	height: 350px;
 	.todo-header {
 		position: relative;
-		padding: 0 0 15px 0;
 		h4 {
 			color: #FFFFFF;
 			font-weight: 600;
@@ -20,7 +18,7 @@
 	}
 	.todo-body {
 		.todo-list-wrap {
-			height: 235px;
+			height: 215px;
 			overflow: hidden;
 			position: relative;
 			margin-bottom: 15px;
@@ -63,6 +61,11 @@
 
 		.checkbox1 span:before {
 			border-color: #fff;
+		}
+	}
+	&.panel-danger {
+		.panel-heading {
+			background-color: darken(@brand-danger, 3%);
 		}
 	}
 }

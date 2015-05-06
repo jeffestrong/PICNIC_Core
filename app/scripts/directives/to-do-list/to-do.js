@@ -3,7 +3,7 @@
 angular.module('AniTheme')
 .directive('todolist',function(){
 		return {
-	    templateUrl:'scripts/directives/to-do-list/to-do.html',
+	    templateUrl:'scripts/directives/to-do-list/to-do.html?v='+window.app_version,
 	    restrict: 'E',
 	    replace: true,
     	controller: function($scope){

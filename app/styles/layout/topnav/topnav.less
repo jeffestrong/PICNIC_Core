@@ -31,7 +31,6 @@
 	ul.navbar-nav {
 		li {
 			.transition;
-			margin-left: 1px;
 			a {
 				.glyphicon {
 					font-size: 16px;
@@ -63,8 +62,7 @@
 			ul.dropdown-menu {
 				padding: 0;
 				border: none;				
-				border-top: 1px solid #eee;;	
-				box-shadow: none;
+				border-top: 1px solid #eee;;
 				li.messages-top {
 					padding-left: 8px;
 					padding-top: 10px;
@@ -169,6 +167,7 @@
 				padding-bottom: 10px;
 					img.topnav-img {
 						width: 30px;
+						margin-right: 5px;
 					}
 
 				}
@@ -208,7 +207,7 @@
 					color: #27ae60;
 				}
 				.purple-base {
-					color: #8e44ad ;
+					color: #957BBD;
 				}
 				.midnight-blue-base {
 					color: #2c3e50;
@@ -253,11 +252,13 @@
 		top: -6px;
 		z-index: 3;
 		li.dropdown {
-			margin-right: 15px !important;
 			a {
 				padding-bottom: 8px !important;
 			}
 		}
+	}
+	.topnav-navbar ul.pull-right li.dropdown.admin-dropdown a img.topnav-img {
+		margin-right: 0;
 	}
 	.navbar-nav .open .dropdown-menu {
   		position: absolute;

@@ -54,7 +54,7 @@ angular.module('AniTheme')
 
 .directive('smartButton', function ($animate) {
     return {
-        templateUrl: 'scripts/directives/smart-button/smart-button.html',
+        templateUrl: 'scripts/directives/smart-button/smart-button.html?v='+window.app_version,
         transclude: true,
         replace: true,
         restrict: 'E',

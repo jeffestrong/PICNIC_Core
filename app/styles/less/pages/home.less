@@ -16,9 +16,9 @@
 	.home-charts-middle {
 		.chart-container {
 			.box;
-			padding: 0px;
 			position: relative;
-			min-height: 285px;
+			min-height: 287px;
+			overflow: hidden;
 			.chart-comment {
 			    position: absolute;
 			    left: 15px;
@@ -32,8 +32,7 @@
 				}
 			}
 			.c3 svg {
-				margin-left: -20px;
-				margin-top: 5px;
+				margin: 15px;
 			}		
 			.c3-axis-x text {
 				fill: white;
@@ -55,8 +54,7 @@
 			.box;
 
 			.c3 svg {
-				margin-left: -10px;
-				margin-bottom: -34px;
+				margin-bottom: -12px;
 			}
 			.c3-axis-x text {
 				fill: none;
@@ -75,6 +73,9 @@
 			.box;
 			margin-top: 10px;
 			text-align: center;
+			#pie-chart {
+				margin-top: 6px;
+			}
 			.c3-chart-arc text {
 				display: none;
 			} 
@@ -120,6 +121,9 @@
 	}
 	
 }
+#bar-chart {
+	overflow: hidden;
+}
 
 .box {
 	background-color: #fff;
@@ -127,29 +131,29 @@
 }
 
 @media (min-width: 1024px) {
-	.home-container {
-		margin: 0 -10px 0;
-		.home-row {
-			display: table;
-			min-width: 100%;
-			border-spacing: 10px 0;
-			margin: 0;
+	// .home-container {
+	// 	margin: 0 -10px 0;
+	// 	.home-row {
+	// 		display: table;
+	// 		min-width: 100%;
+	// 		border-spacing: 10px 0;
+	// 		margin: 0;
 
-			> [class*="col-"] {
-			 	display: table-cell;
-			 	float: none;
-			 	vertical-align: top;
-			 	padding: 0;
-			 	div {
-			 		border-spacing: 0;
-			 	}
-			}
+	// 		> [class*="col-"] {
+	// 		 	display: table-cell;
+	// 		 	float: none;
+	// 		 	vertical-align: top;
+	// 		 	padding: 0;
+	// 		 	div {
+	// 		 		border-spacing: 0;
+	// 		 	}
+	// 		}
 
-			&:before, &:after {
-				display: none !important;
-			}
-		}
-	}
+	// 		&:before, &:after {
+	// 			display: none !important;
+	// 		}
+	// 	}
+	// }
 }
 
 .heading {
@@ -157,6 +161,7 @@
 	font-size: 12px;
 	text-transform: uppercase;
 }
+
 
 @media (max-width: 768px) {
 	.home-charts-right {

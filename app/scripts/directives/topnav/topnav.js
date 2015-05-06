@@ -3,7 +3,7 @@
 angular.module('AniTheme')
 .directive('topnav',function(){
 		return {
-	    templateUrl:'scripts/directives/topnav/topnav.html',
+	    templateUrl:'scripts/directives/topnav/topnav.html?v='+window.app_version,
 	    restrict: 'E',
 	    replace: true,
 	    controller: function($scope){
