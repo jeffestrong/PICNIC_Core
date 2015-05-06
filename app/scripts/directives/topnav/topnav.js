@@ -18,8 +18,7 @@ angular.module('AniTheme')
 				$('<link>')
 				  .appendTo('head')
 				  .attr({type : 'text/css', rel : 'stylesheet'})
-				  .attr('href', 'styles/app-'+setTheme+'.css');
-				  console.log('hey');
+				  .attr('href', 'styles/app-'+setTheme+'.css?v='+window.app_version);
 
 				// $.get('/api/change-theme?setTheme='+setTheme);
 

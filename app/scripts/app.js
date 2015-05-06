@@ -8,7 +8,7 @@
 *
 * Main module of the application.
 */
-window.app_version = 1;
+window.app_version = 1.9;
 
 angular
 .module('AniTheme', [
