@@ -38,6 +38,10 @@ module.exports = function(config) {
       '../bower_components/textAngular/src/textAngularSetup.js',
       '../bower_components/perfect-scrollbar/js/perfect-scrollbar.js',
       '../bower_components/classie/classie.js',
+      '../bower_components/angular-progress-button-styles/dist/angular-progress-button-styles.min.js',
+      '../bower_components/angular-translate/angular-translate.js',
+      '../bower_components/angular-translate-loader-url/angular-translate-loader-url.js',
+      '../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
       // endbower
       '../app/scripts/**/*.js',
       //'../test/mock/**/*.js',

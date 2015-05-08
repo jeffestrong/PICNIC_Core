@@ -21,12 +21,28 @@ angular
     'angular-growl',
     'growlNotifications',    
     'angular-loading-bar',
+    'angular-progress-button-styles',
+    'pascalprecht.translate',
     'ui.bootstrap'
     ])
     .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
         cfpLoadingBarProvider.latencyThreshold = 5;
           cfpLoadingBarProvider.includeSpinner = false;
       }])
+    .config(function(progressButtonConfigProvider) {
+      progressButtonConfigProvider.profile('login', {
+        style: 'shrink',
+        direction: 'vertical'
+      });
+    })
+    .config(function($translateProvider) {
+        $translateProvider.useStaticFilesLoader({
+          prefix: 'languages/',
+          suffix: '.json'
+        });
+        $translateProvider.preferredLanguage('en');
+       
+    })
     .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when('/dashboard', '/dashboard/home');
@@ -36,7 +52,8 @@ angular
     .state('base', {
         abstract: true,
         url: '',
-        templateUrl: 'views/base.html?v='+window.app_version
+        templateUrl: 'views/base.html?v='+window.app_version,
+        controller: 'DashboardCtrl'
     })
     .state('login', {
         url: '/login',
@@ -58,8 +75,7 @@ angular
     .state('dashboard', {
         url: '/dashboard',
         parent: 'base',
-        templateUrl: 'views/layouts/dashboard.html?v='+window.app_version,
-        controller: 'DashboardCtrl'
+        templateUrl: 'views/layouts/dashboard.html?v='+window.app_version
     })
     .state('home', {
         url: '/home',

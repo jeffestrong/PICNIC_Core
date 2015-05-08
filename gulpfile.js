@@ -63,6 +63,11 @@ gulp.task('images', function() {
 .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('lang', function() {
+    return gulp.src('app/languages/**/*')
+    .pipe(gulp.dest('dist/languages'));
+});
+
 gulp.task('fonts', function() {
     return gulp.src(require('main-bower-files')().concat('app/styles/fonts/**/*')
         .concat('bower_components/bootstrap/fonts/*'))
@@ -103,7 +108,7 @@ require('http').createServer(app)
 });
 });
 
-gulp.task('serve', ['wiredep', 'connect', 'fonts', 'watch'], function() {
+gulp.task('serve', ['wiredep', 'connect', 'fonts', 'lang', 'watch'], function() {
     if (argv.open) {
         require('opn')('http://localhost:9000');
     }
@@ -155,7 +160,7 @@ gulp.watch('app/styles/**/*.less', ['styles']);
 gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('builddist', ['jshint', 'html', 'images', 'fonts', 'extras', 'styles'],
+gulp.task('builddist', ['jshint', 'html', 'images', 'lang', 'fonts', 'extras', 'styles'],
     function() {
         return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
     });

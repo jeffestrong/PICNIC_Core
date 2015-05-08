@@ -8,13 +8,30 @@
  * Controller of AniTheme
  */
 angular.module('AniTheme')
-  .controller('LoginCtrl', function($scope, $location) {
+  .controller('LoginCtrl', function($scope, $location, $timeout, $q) {
 
     $scope.submit = function() {
 
-      $location.path('/dashboard/home');
+      	return false;
 
-      return false;
+    }
+
+    $scope.authenticate = function() {
+
+    	var defer = $q.defer();
+
+    	$timeout(function(){
+
+    		defer.resolve();
+
+    		$timeout(function(){
+    		   	$location.path('/dashboard/home');
+    		}, 600);
+
+    	}, 1100);
+
+    	return defer.promise;
+
     }
 
   });

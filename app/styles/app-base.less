@@ -51,3 +51,28 @@
 html,body {
 	overflow: hidden;
 }
+
+.rtl {
+	* {
+		direction: rtl;
+	}
+	#body-container {
+		margin-right: 235px;
+		margin-left: 0;
+	}
+	.navbar-header {
+		float: right;
+	}
+	.side-widgets {
+		margin-left: 0 !important;
+	}
+	#sidebar div.side-menu .menu-body ul.sidenav li ul.nested-dropdown {
+		left: 0;
+		right: 45px;
+	}
+}
+* {
+	a:hover {
+		cursor: pointer;
+	}
+}

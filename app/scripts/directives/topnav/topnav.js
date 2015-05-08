@@ -23,6 +23,15 @@ angular.module('AniTheme')
 				// $.get('/api/change-theme?setTheme='+setTheme);
 
 			}
+			$scope.rightToLeft = function(){
+				// alert('message');
+				$('body').toggleClass('rtl');
+				$('.stat').removeClass('hvr-wobble-horizontal');
+
+			}
+
+
+			
         }
 	}
 });

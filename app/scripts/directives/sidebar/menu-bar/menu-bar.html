@@ -6,7 +6,7 @@
 				<span class="glyphicon glyphicon-home"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li><a ng-class="{active: $state.includes('home')}" ui-sref="home">Dashboard</a></li>
+					<li><a ng-class="{active: $state.includes('home')}" ui-sref="home">{{ 'dashboard' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('typography')}">
@@ -14,7 +14,7 @@
 				<span class="glyphicon glyphicon-text-size"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li><a ng-class="{active: $state.includes('typography')}" ui-sref="typography">Typography</a></li>
+					<li><a ng-class="{active: $state.includes('typography')}" ui-sref="typography">{{ 'typography' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('grid')}">
@@ -22,7 +22,7 @@
 				<span class="glyphicon glyphicon-th-large"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li><a ui-sref="grid">Grid</a></li>
+					<li><a ui-sref="grid">{{ 'grid' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('table')}">
@@ -30,7 +30,7 @@
 				<span class="glyphicon glyphicon-list"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li><a ng-class="{active: $state.includes('table')}" ui-sref="table">Table</a></li>
+					<li><a ng-class="{active: $state.includes('table')}" ui-sref="table">{{ 'table' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('form')}">
@@ -38,9 +38,9 @@
 					<span class="glyphicon glyphicon-equalizer"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li class="sidemenu-header">Forms</li>
-					<li><a ng-class="{active: $state.includes('form')}" ui-sref="elements">Form Elements</a></li>
-					<li><a ng-class="{active: $state.includes('form')}" ui-sref="components">Form Components</a></li>
+					<li class="sidemenu-header">{{ 'form' | translate }}</li>
+					<li><a ng-class="{active: $state.includes('form')}" ui-sref="elements">{{ 'elements' | translate }}</a></li>
+					<li><a ng-class="{active: $state.includes('form')}" ui-sref="components">{{ 'components' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('ui-interface')}">
