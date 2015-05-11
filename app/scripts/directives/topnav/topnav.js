@@ -26,7 +26,14 @@ angular.module('AniTheme')
 			$scope.rightToLeft = function(){
 				// alert('message');
 				$('body').toggleClass('rtl');
-				$('.stat').removeClass('hvr-wobble-horizontal');
+
+				// var t = $('body').hasClass('rtl');
+				// console.log(t);
+				
+				if($('body').hasClass('rtl')) {
+					$('.stat').removeClass('hvr-wobble-horizontal');
+				}
+				
 
 			}
 

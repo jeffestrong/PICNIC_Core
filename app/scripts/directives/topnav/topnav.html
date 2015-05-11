@@ -26,7 +26,7 @@
 					<li class="dropdown-messages">
 						<a href="#">
 							<div class="message-sender">
-								Lucy Chandler
+								{{ 'lucy' | translate }}
 							</div>
 							<div class="message-header">
 								{{ 'topnavheader1' | translate }}
@@ -36,7 +36,7 @@
 					<li class="dropdown-messages">
 						<a href="#">
 							<div class="message-sender">
-								Diptesh Mishra
+								{{ 'diptesh' | translate }}
 							</div>
 							<div class="message-header">
 								{{ 'topnavheader2' | translate }}
@@ -46,7 +46,7 @@
 					<li class="dropdown-messages">
 						<a href="#">
 							<div class="message-sender">
-								Weng Zhiao
+								{{ 'weng' | translate }}
 							</div>
 							<div class="message-header">
 								{{ 'topnavheader3' | translate }}
@@ -57,7 +57,7 @@
 					<li class="dropdown-messages">
 						<a href="#">
 							<div class="message-sender">
-								Jade Mullick
+								{{ 'jade' | translate }}
 							</div>
 							<div class="message-header">
 								{{ 'topnavheader4' | translate }}
@@ -70,33 +70,33 @@
 				<a href class="dropdown-toggle" dropdown-toggle><span class="glyphicon glyphicon-bell"></span><span class="badge badge-red">13</span></a>
 				<ul class="dropdown-menu animated fadeIn">
 					<li class="notification-header text-center">
-						You have 3 new notifications.
+						{{ 'threenotifications' | translate }}
 					</li>
 					<li class="dropdown-notifications">
 						<a href="#">
 							<div class="notification">
-								<i class="fa fa-thumbs-up"></i>Runuma Das liked your photo. 
+								<i class="fa fa-thumbs-up"></i> {{ 'runuma' | translate }}
 							</div>
 						</a>
 					</li>
 					<li class="dropdown-notifications">
 						<a href="#">
 							<div class="notification">
-								<i class="fa fa-thumbs-up"></i>Harshita Borah liked your status.
+								<i class="fa fa-thumbs-up"></i>{{ 'harshita' | translate }}
 							</div>
 						</a>
 					</li>
 					<li class="dropdown-notifications">
 						<a href="#">
 							<div class="notification">
-								<i class="fa fa-user-plus"></i>Archana wants to be friends.
+								<i class="fa fa-user-plus"></i>{{ 'archana' | translate }}
 							</div>
 						</a>
 					</li>
 					<li class="dropdown-notifications">
 						<a href="#">
 							<div class="notification">
-								<i class="fa fa-user-times"></i>Animesh Saha unfriended you.
+								<i class="fa fa-user-times"></i>{{ 'animesh' | translate }}
 							</div>
 						</a>
 					</li>
@@ -168,8 +168,8 @@
 			<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
 				<a href class="dropdown-toggle" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""> Ani Pascal</a>
 				<ul class="dropdown-menu pull-right animated fadeIn">
-					<li><a ui-sref="profile">Profile</a></li>
-					<li><a ui-sref="login">Logout</a></li>
+					<li><a ui-sref="profile">{{ 'profilee' | translate }}</a></li>
+					<li><a ui-sref="login">{{ 'logout' | translate }}</a></li>
 				</ul>
 			</li>	
 		</ul>
@@ -180,8 +180,8 @@
 		<li class="dropdown admin-dropdown" dropdown on-toggle="toggled(open)">
 			<a href class="dropdown-toggle animated fadeIn" dropdown-toggle><img src="images/flat-avatar.png" class="topnav-img" alt=""></a>
 			<ul class="dropdown-menu pull-right">
-				<li><a ui-sref="profile">Profile</a></li>
-				<li><a ui-sref="login">Logout</a></li>
+				<li><a ui-sref="profile">{{ 'profilee' | translate }}</a></li>
+				<li><a ui-sref="login">{{ 'logout' | translate }}</a></li>
 			</ul>
 		</li>	
 	</ul>
