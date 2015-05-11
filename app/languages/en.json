@@ -24,5 +24,14 @@
       "todo": "To do Tasks",
       "form": "Form",
       "elements": "Form Elements",
-      "components": "Form Components"
+      "components": "Form Components",
+      "user_interface": "User Interface",
+      "button": "Button",
+      "dropdown": "Dropwown",
+      "icon": "Icon",
+      "panel": "Panel",
+      "alert": "Alert",
+      "progressbars": "Progressbars",
+      "pagination": "Pagination",
+      "other_elements": "Other Elements"
   }

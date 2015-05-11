@@ -24,5 +24,16 @@
       "todo": "कार्य करने के लिए",
       "form": "फार्म",
       "elements": "फार्म तत्वों",
-      "components": "पर्चा अवयव"
+      "components": "पर्चा अवयव",
+      "user_interface": "प्रयोक्ता इंटरफ़ेस",
+      "button": "बटन",
+      "dropdown": "ड्रॉप डाउन",
+      "icon": "आइकन",
+      "panel": "पैनल",
+      "alert": "चेतावनी",
+      "progressbars": "प्रगति सलाखों",
+      "pagination": "पृष्ठ पर अंक लगाना",
+      "other_elements": "अन्य तत्वों"
 }
+
+

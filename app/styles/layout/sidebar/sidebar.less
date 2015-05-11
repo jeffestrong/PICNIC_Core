@@ -14,7 +14,7 @@
 	}
 	div.side-widgets {
 		margin-left: 45px;
-		color: #D8F5FF;
+		color: rgba(255,255,255,0.8);
 		float: left;
 		border-top: 1px solid darken(@brand-primary, 6%);
 		width: @nav-width - 45px;
@@ -25,13 +25,13 @@
 			text-align: center;
 			padding: 15px;
 			height: 50px;
-			color: lighten(@brand-primary, 35%);
+			color: rgba(255,255,255,0.8);
 			font-size: 15px;
 			font-weight: 600;
 			a {
 				color: inherit;
 				&:hover, &:focus {
-					color: lighten(@brand-primary, 55%);
+					color: rgba(255,255,255,1);
 					text-decoration: none;
 				}
 			}
@@ -75,7 +75,7 @@
 							a {
 								color: inherit;
 								&:hover, &:focus {
-									color: lighten(@brand-primary, 55%);
+									color: rgba(255,255,255,1);
 									text-decoration: none;
 								}
 							}
@@ -106,16 +106,19 @@
 				li {
 					position: relative;
 					margin-top: 0;
-					color: #6D6D6D;
+					
 					a {
-						color: #D8F5FF;
+						color: rgba(255,255,255,0.8);
 						border-radius: 0;
 						transition: all .12s linear;
+						&:hover {
+							color: #fff;
+						}
 						
 					}
 					a:hover, a:focus, a:active {			
 						background: @brand-primary;
-						color: lighten(#D8F5FF, 10%);
+						color: #fff;
 					}
 					ul.nested-dropdown {
 						display: none;
@@ -130,12 +133,12 @@
 						padding-top: 3px;
 						li {
 							min-height: 24px;
+							color: darken(@brand-primary, 5%);
 							a {
 								color: @brand-primary;
 								display: block;
 								padding: 8px;
 								height: auto;
-
 								&:hover, &:focus, &:active {
 									color: darken(@brand-primary, 5%);
 									background: #f8f8f8;
@@ -152,6 +155,10 @@
 							font-size: 12px;
 							font-weight: bold;
 							line-height: 21px;
+							color: darken(@brand-primary, 5%);
+							a {
+								color: darken(@brand-primary, 5%);
+							}
 						}
 					}
 					&:hover {

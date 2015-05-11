@@ -24,5 +24,18 @@
       "todo": "Om Taken te doen",
       "form": "vormen",
       "elements": "vorm elements",
-      "components": "vorm components"
+      "components": "vorm components",
+      "user_interface": "gebruikersinterface",
+      "button": "knop",
+      "dropdown": "dropdown",
+      "icon": "icoon",
+      "panel": "paneel",
+      "alert": "alarm",
+      "progressbars": "vooruitgang bars",
+      "pagination": "paginering",
+      "other_elements": "andere elementen",
+      "chart": "andere elementen",
+      "cahrt.js": "andere elementen",
+      "c3.js": "andere elementen"
+
   }

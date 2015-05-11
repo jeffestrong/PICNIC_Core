@@ -48,15 +48,15 @@
 				<span class="glyphicon glyphicon-cloud-download"></span>
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li class="sidemenu-header">User Inverface</li>
-					<li><a ui-sref="button">Buttons</a></li>
-					<li><a ui-sref="dropdown">Dropdown</a></li>
-					<li><a ui-sref="icons">Icons</a></li>
-					<li><a ui-sref="panels">Panels</a></li>
-					<li><a ui-sref="alerts">Alerts</a></li>
-					<li><a ui-sref="progressbars">Progressbars</a></li>
-					<li><a ui-sref="pagination">Pagination</a></li>
-					<li><a ui-sref="other-elements">Other Elements</a></li>
+					<li class="sidemenu-header">{{ 'user_interface' | translate }}</li>
+					<li><a ui-sref="button">{{ 'buttons' | translate }}</a></li>
+					<li><a ui-sref="dropdown">{{ 'dropdown' | translate }}</a></li>
+					<li><a ui-sref="icons">{{ 'icons' | translate }}</a></li>
+					<li><a ui-sref="panels">{{ 'panels' | translate }}</a></li>
+					<li><a ui-sref="alerts">{{ 'alerts' | translate }}</a></li>
+					<li><a ui-sref="progressbars">{{ 'progressbars' | translate }}</a></li>
+					<li><a ui-sref="pagination">{{ 'pagination' | translate }}</a></li>
+					<li><a ui-sref="other-elements">{{ 'other_elements' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('charts')}">
@@ -64,9 +64,9 @@
 				<span class="glyphicon glyphicon-signal"></span>	
 				</a>
 				<ul class="nested-dropdown animated fadeIn">
-					<li class="sidemenu-header">Charts</li>	
-					<li><a ui-sref="chartjs">Chart.js</a></li>
-					<li><a ui-sref="c3chart">C3.js</a></li>
+					<li class="sidemenu-header">{{ 'charts' | translate }}</li>	
+					<li><a ui-sref="chartjs">{{ 'chart.js' | translate }}</a></li>
+					<li><a ui-sref="c3chart">{{ 'c3.js' | translate }}</a></li>
 				</ul>
 			</li>
 			<li ng-class="{active: $state.includes('calendar')}"> 

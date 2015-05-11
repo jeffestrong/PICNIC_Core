@@ -24,5 +24,14 @@
       "todo": "کاموں کو کرنے",
       "form": "فارم",
       "elements": "فارم عناصر",
-      "components": "فارم اجزاء"
+      "components": "فارم اجزاء",
+      "user_interface": "User Interface",
+      "button": "",
+      "dropdown": "ڈراپڈاؤن",
+      "icon": "آئکن",
+      "panel": "پینل",
+      "alert": "انتباہ",
+      "progressbars": "پروگریس بار",
+      "pagination": "صفحہ بندی",
+      "other_elements": "دیگر عناصر"
   }
