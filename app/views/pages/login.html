@@ -6,16 +6,16 @@
 			<form role="form">
 				<div class="form-content">
 					<div class="form-group">
-						<input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="Email">
+						<input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="{{ 'email' | translate }}">
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+						<input type="password" class="form-control input-underline input-lg" id="" placeholder="{{ 'password' | translate }}">
 					</div>
 				</div>
-				<button ng-click="submit()" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" progress-button="authenticate()">Login</button>				
+				<button ng-click="submit()" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" progress-button="authenticate()">{{ 'login' | translate }}</button>				
 				&nbsp;
-				<a ui-sref="signup"><button type="submit" class="btn btn-white btn-outline btn-lg btn-rounded">Register Here</button></a> 
+				<a ui-sref="signup"><button type="submit" class="btn btn-white btn-outline btn-lg btn-rounded">{{ 'registerhere' | translate }}</button></a> 
 			</form>
 		</div>	
 	</div>

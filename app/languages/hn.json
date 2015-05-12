@@ -56,7 +56,14 @@
       "diptesh": "Diptesh मिश्रा",
       "weng": "वांग जिओ",
       "jade": "जेड मलिक",
-      "add": "जोड़ें"
+      "add": "जोड़ें",
+      "registerhere": "यहां रजिस्टर करें",
+      "email": "ई मेल",
+      "password": "पासवर्ड",
+      "register": "रजिस्टर",
+      "loginpage": "लॉगिन पृष्ठ",
+      "fullname": "पूरा नाम",
+      "repeatpass": "पासवर्ड दोहराएं"
 
 }
 
