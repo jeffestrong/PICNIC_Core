@@ -56,5 +56,12 @@
       "diptesh": "Diptesh Mishra",
       "weng": "Wang Xiao",
       "jade": "Jade Mullick",
-      "add": "Add"
+      "add": "Add",
+      "registerhere": "Register Here",
+      "email": "Email",
+      "password": "Password",
+      "register": "Register",
+      "loginpage": "Login Page",
+      "fullname": "Full Name",
+      "repeatpass": "Repeat Password"
   }
