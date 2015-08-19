@@ -9357,6 +9357,9 @@ to prevent collapsing during animation*/
 .side-widgets .menu a {
   color: white;
 }
+.side-widgets .menu li.active a {
+  background: #3f4750;
+}
 .side-widgets .widgets-content {
   padding: 0 !important;
 }
@@ -9405,18 +9408,25 @@ to prevent collapsing during animation*/
   padding: 0;
 }
 .no-padding .img-height {
-  max-height: 300px;
+  min-height: 300px;
   overflow: hidden;
+  background-size: cover;
 }
 .no-padding .product-desc {
-  height: 40px;
+  height: 60px;
   padding: 10px;
+}
+.no-padding .product-desc .header {
+  font-weight: 600;
 }
 .truncate {
   width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.panel-footer {
+  background: #f9f9f9;
 }
 .browsehappy {
   margin: 0.2em 0;

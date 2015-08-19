@@ -4,14 +4,21 @@
 		<div class="col-sm-4" ng-repeat="product in products">
 			<div class="panel panel-default">
 				<div class="panel-body no-padding">
-					<div class="img-height">
-						<img class="img-responsive" src="{{product.url}}" alt="">
+					<div class="img-height" style="background: url({{product.url}}) no-repeat center center fixed; background-size: cover;">
+						<!-- <img class="img-responsive" src="" alt=""> -->
 					</div>
 					<div class="product-desc">
-						<div class="truncate text-center">{{product.desc}}</div>
+						<div class="truncate header">{{product.head}}</div>
+						<div class="truncate desc text-center">{{product.desc}}</div>
 					</div>
 				</div>
-				<div class="panel-footer"><button type="button" class="btn btn-primary btn-rounded">Buy Now</button></div>
+				<div class="panel-footer">
+				<button type="button" class="btn btn-primary btn-rounded"><i class="fa fa-shopping-cart"></i>&nbsp;Comprar</button>
+				<button type="button" class="btn btn-success btn-sm pull-right" style="margin-left: 5px;"><i class="fa fa-shopping-cart"></i>&nbsp;2</button>
+				<button type="button" class="btn btn-danger btn-sm pull-right" style="margin-left: 5px;"><i class="fa fa-heart"></i>&nbsp;2</button>
+				<button type="button" class="btn btn-warning btn-sm pull-right" style="margin-left: 5px;">Ahorra Q.31.00</button>
+					
+				</div>
 			</div>
 		</div>		
 	</div>
