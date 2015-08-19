@@ -3,5 +3,99 @@
 		<sidebar-profile></sidebar-profile>
 		<sidebar-calendar></sidebar-calendar>
 		<sidebar-newsfeed></sidebar-newsfeed>	
+		<div class="menu">
+			<div class="menu-body">
+				<ul class="nav nav-pills nav-stacked sidenav">
+					<li ng-class="{active: $state.includes('home')}">
+						<a ui-sref="home">
+						<span class="glyphicon glyphicon-home"></span>&nbsp; {{ 'dashboard' | translate }}
+						</a>
+					</li>
+					<li ng-class="{active: $state.includes('typography')}">
+						<a ui-sref="typography">
+						<span class="glyphicon glyphicon-text-size"></span>&nbsp; {{ 'typography' | translate }}
+						</a>
+					</li>
+					<li ng-class="{active: $state.includes('grid')}">
+						<a ui-sref="grid">
+						<span class="glyphicon glyphicon-th-large"></span>&nbsp; {{ 'grid' | translate }}
+						</a>
+					</li>
+					<li ng-class="{active: $state.includes('table')}">
+						<a ui-sref="table">
+						<span class="glyphicon glyphicon-list"></span>&nbsp; {{ 'table' | translate }}
+						</a>
+					</li>
+					<li ng-class="{'show-subnav': showingSubNav=='form'}">
+						<a href="javascript:;" ng-click="showSubNav('form')">
+							<span class="glyphicon glyphicon-equalizer"></span>&nbsp; {{ 'form' | translate }}
+						</a>
+						<ul class="nested-dropdown" collapse="showingSubNav!='form'">
+							<li><a ng-class="{active: $state.includes('form')}" ui-sref="elements">{{ 'elements' | translate }}</a></li>
+							<li><a ng-class="{active: $state.includes('form')}" ui-sref="components">{{ 'components' | translate }}</a></li>
+						</ul>
+					</li>
+					<li ng-class="{'show-subnav': showingSubNav=='ui'}">
+						<a href="#" ng-click="showSubNav('ui')">
+						<span class="glyphicon glyphicon-cloud-download"></span>&nbsp; {{ 'user_interface' | translate }}
+						</a>
+						<ul class="nested-dropdown" collapse="showingSubNav!='ui'">
+							<li><a ui-sref="button">{{ 'buttons' | translate }}</a></li>
+							<li><a ui-sref="dropdown">{{ 'dropdown' | translate }}</a></li>
+							<li><a ui-sref="icons">{{ 'icons' | translate }}</a></li>
+							<li><a ui-sref="panels">{{ 'panels' | translate }}</a></li>
+							<li><a ui-sref="alerts">{{ 'alerts' | translate }}</a></li>
+							<li><a ui-sref="progressbars">{{ 'progressbars' | translate }}</a></li>
+							<li><a ui-sref="pagination">{{ 'pagination' | translate }}</a></li>
+							<li><a ui-sref="other-elements">{{ 'other_elements' | translate }}</a></li>
+						</ul>
+					</li>
+					<li ng-class="{'show-subnav': showingSubNav=='charts'}">
+						<a href="#" ng-click="showSubNav('charts')">
+						<span class="glyphicon glyphicon-signal"></span>&nbsp; {{ 'charts' | translate }}	
+						</a>
+						<ul class="nested-dropdown" collapse="showingSubNav!='charts'">
+							<li><a ui-sref="chartjs">Chart.js</a></li>
+							<li><a ui-sref="c3chart">C3.js</a></li>
+						</ul>
+					</li>
+					<li ng-class="{active: $state.includes('calendar')}"> 
+						<a ui-sref="calendar">
+						<span class="glyphicon glyphicon-calendar"></span>&nbsp; {{ 'calendar' | translate }}
+						</a>
+					</li>
+					<li ng-class="{'show-subnav': showingSubNav=='mail'}">
+						<a href="#" ng-click="showSubNav('mail')">
+						<span class="glyphicon glyphicon-envelope"></span>&nbsp; {{ 'mail' | translate }}
+						</a>
+						<ul class="nested-dropdown" collapse="showingSubNav!='mail'">
+							<li><a ui-sref="inbox">{{ 'inbox' | translate }}</a></li>
+							<li><a ui-sref="compose">{{ 'compose' | translate }}</a></li>
+						</ul>
+					</li>
+					<li ng-class="{active: $state.includes('invoice')}"> 
+						<a ui-sref="invoice">
+						<span class="glyphicon glyphicon-list-alt"></span>&nbsp; {{ 'invoice' | translate }}
+						</a>
+					</li>
+					<li ng-class="{active: $state.includes('product')}"> 
+						<a ui-sref="product">
+						<span class="glyphicon glyphicon-list-alt"></span>&nbsp; {{ 'product' | translate }}
+						</a>
+					</li>
+					<li ng-class="{'show-subnav': showingSubNav=='pages'}">
+						<a href="#" ng-click="showSubNav('pages')">
+						<span class="glyphicon glyphicon-duplicate"></span>&nbsp; {{ 'pages' | translate }}
+						</a>
+						<ul class="nested-dropdown" collapse="showingSubNav!='pages'">
+							<li><a ui-sref="blank">{{ 'blankpage' | translate }}</a></li>
+							<li><a ui-sref="login">{{ 'login' | translate }}</a></li>
+							<li><a ui-sref="signup">{{ 'signup' | translate }}</a></li>
+							<li><a ui-sref="404-page">{{ '404page' | translate }}</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>

@@ -10,12 +10,15 @@
 }
 
 .topnav-navbar {
-	background: none;
+	background: @brand-primary;
 	border-radius: 0;
 	border: none;
 	border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+	a {
+		color: white;
+	}
 	.collapse.navbar-collapse {
-		background-color: #fff;
+		background-color: @brand-primary;
 	}
 	.navbar-header {
 		width: @nav-width;
@@ -295,3 +298,8 @@
 	  max-width: 120px; 
 	}
 }
+
+
+
+
+

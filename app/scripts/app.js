@@ -13,7 +13,6 @@ window.app_version = 1.9;
 angular
 .module('AniTheme', [
     'ui.router',
-    'ngAnimate',
     'ui.calendar',
     'chart.js',
     'textAngular',
@@ -188,7 +187,13 @@ angular
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/mail/inbox.html?v='+window.app_version
     })
-      .state('compose', {
+     .state('product', {
+        url: '/product',
+        parent: 'dashboard',
+        templateUrl: 'views/pages/dashboard/product.html?v='+window.app_version,
+        conntroller: 'productControl'
+    })
+    .state('compose', {
         url: '/mail/compose',
         parent: 'dashboard',
         templateUrl: 'views/pages/dashboard/mail/compose.html?v='+window.app_version

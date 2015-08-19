@@ -13,6 +13,16 @@ angular.module('AniTheme')
 		        $('.dashboard-page').toggleClass('push-right');
 
         	}
+        	$scope.show = function(){
+
+		        $('body').toggleClass('push');
+
+        	}
+        	$scope.rightShow = function(){
+
+		        $('body').toggleClass('push-right');
+
+        	}
         	$scope.changeTheme = function(setTheme){
 
 				$('<link>')
@@ -26,7 +36,7 @@ angular.module('AniTheme')
 			$scope.rightToLeft = function(){
 				// alert('message');
 				$('body').toggleClass('rtl');
-
+				$('body').toggleClass('push-right');
 				// var t = $('body').hasClass('rtl');
 				// console.log(t);
 				

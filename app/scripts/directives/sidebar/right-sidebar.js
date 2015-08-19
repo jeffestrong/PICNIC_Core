@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('AniTheme')
-	.directive('sidebar',function(){
+	.directive('rightSidebar',function(){
 		return {
-        templateUrl:'scripts/directives/sidebar/sidebar.html?v='+window.app_version,
+        templateUrl:'scripts/directives/sidebar/right-sidebar.html?v='+window.app_version,
         restrict: 'E',
         replace: true,
 

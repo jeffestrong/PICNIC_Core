@@ -122,16 +122,10 @@
 						</div>
 					</h3>
 				</div>
-				<div class="panel-body">
-					<carousel interval="5000">
-						<slide active="slide.active">
-							<img src="/images/img1.jpg" alt="">
-						</slide>
-						<slide>
-							<img src="/images/img2.jpg" alt="">
-						</slide>
-						<slide>
-							<img src="/images/img3.jpg" alt="">
+				<div class="panel-body" ng-controller="carouselCtrl">
+					<carousel interval="5000" no-wrap="false">
+						<slide ng-repeat="slide in slides" active="slide.active">
+							<img src="{{slide.url}}" alt="">
 						</slide>
 					</carousel>
 				</div>

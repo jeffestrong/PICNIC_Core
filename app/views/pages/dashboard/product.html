@@ -1,0 +1,18 @@
+<pageheader pagename="Product" subtitle="Extras"></pageheader>
+<div class="conter-wrapper">
+	<div class="row" ng-controller="productControl">
+		<div class="col-sm-4" ng-repeat="product in products">
+			<div class="panel panel-default">
+				<div class="panel-body no-padding">
+					<div class="img-height">
+						<img class="img-responsive" src="{{product.url}}" alt="">
+					</div>
+					<div class="product-desc">
+						<div class="truncate text-center">{{product.desc}}</div>
+					</div>
+				</div>
+				<div class="panel-footer"><button type="button" class="btn btn-primary btn-rounded">Buy Now</button></div>
+			</div>
+		</div>		
+	</div>
+</div>
