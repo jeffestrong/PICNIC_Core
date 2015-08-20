@@ -4,7 +4,7 @@
 		<div class="col-sm-4" ng-repeat="product in products">
 			<div class="panel panel-default">
 				<div class="panel-body no-padding">
-					<div class="img-height" style="background: url({{product.url}}) no-repeat center center fixed; background-size: cover;">
+					<div class="img-height" style="background-image: url({{product.url}});">
 						<!-- <img class="img-responsive" src="" alt=""> -->
 					</div>
 					<div class="product-desc">
@@ -12,11 +12,13 @@
 						<div class="truncate desc text-center">{{product.desc}}</div>
 					</div>
 				</div>
-				<div class="panel-footer">
-				<button type="button" class="btn btn-primary btn-rounded"><i class="fa fa-shopping-cart"></i>&nbsp;Comprar</button>
-				<button type="button" class="btn btn-success btn-sm pull-right" style="margin-left: 5px;"><i class="fa fa-shopping-cart"></i>&nbsp;2</button>
-				<button type="button" class="btn btn-danger btn-sm pull-right" style="margin-left: 5px;"><i class="fa fa-heart"></i>&nbsp;2</button>
-				<button type="button" class="btn btn-warning btn-sm pull-right" style="margin-left: 5px;">Ahorra Q.31.00</button>
+				<div class="panel-footer clearfix">
+					<button type="button" class="btn btn-primary btn-rounded pull-left"><i class="fa fa-shopping-cart"></i> Comprar</button>
+					<div class="pull-right right-btn-wrap">
+						<button type="button" class="btn btn-success btn-sm"><i class="fa fa-shopping-cart"></i> 2</button>
+						<button type="button" class="btn btn-danger btn-sm"><i class="fa fa-heart"></i> 2</button>
+						<button type="button" class="btn btn-warning btn-sm">Ahorra Q.31.00</button>
+					</div>
 					
 				</div>
 			</div>
