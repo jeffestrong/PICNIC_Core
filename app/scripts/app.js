@@ -13,6 +13,7 @@ window.app_version = 1.9;
 angular
 .module('AniTheme', [
     'ui.router',
+    'ngAnimate',
     'ui.calendar',
     'chart.js',
     'textAngular',
@@ -24,6 +25,9 @@ angular
     'pascalprecht.translate',
     'ui.bootstrap'
     ])
+    .config(['$animateProvider', function ($animateProvider) {
+           $animateProvider.classNameFilter(/carousel/);
+    }])
     .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
         cfpLoadingBarProvider.latencyThreshold = 5;
           cfpLoadingBarProvider.includeSpinner = false;

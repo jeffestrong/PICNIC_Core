@@ -41,4 +41,16 @@ angular.module('AniTheme')
 		
 	});
 
+	$scope.toggle = function  () {
+		if ($('body').hasClass('push')==true) {
+			$('body').removeClass('push');
+		}
+		else if ($('body').hasClass('push-right1')==true) {
+			$('body').removeClass('push-right1');
+		}
+		else if ($('.dashboard-page').hasClass('push-right')==true) {	
+			$('.dashboard-page').removeClass('push-right');	
+		}
+	}
+
 });	

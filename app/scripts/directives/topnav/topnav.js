@@ -20,7 +20,7 @@ angular.module('AniTheme')
         	}
         	$scope.rightShow = function(){
 
-		        $('body').toggleClass('push-right');
+		        $('body').toggleClass('push-right1');
 
         	}
         	$scope.changeTheme = function(setTheme){

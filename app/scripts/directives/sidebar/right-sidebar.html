@@ -1,6 +1,104 @@
 <aside id="right-sidebar">
 	<div class="sidenav-outer">
 		<menubar></menubar>
-		<sidebarwidgets></sidebarwidgets>
+		<div class="widgets-content">
+			<sidebar-profile></sidebar-profile>
+			<sidebar-calendar></sidebar-calendar>
+			<sidebar-newsfeed></sidebar-newsfeed>	
+			<div class="menu">
+				<div class="menu-body">
+					<ul class="nav nav-pills nav-stacked sidenav">
+						<li ng-class="{active: $state.includes('home')}">
+							<a ui-sref="home" ng-click="rightShow()">
+							<span class="glyphicon glyphicon-home"></span>&nbsp; {{ 'dashboard' | translate }} <span class="badge pull-right">5</span>
+							</a>
+						</li>
+						<li ng-class="{active: $state.includes('typography')}">
+							<a ui-sref="typography" ng-click="rightShow()">
+							<span class="glyphicon glyphicon-text-size"></span>&nbsp; {{ 'typography' | translate }} <span class="badge pull-right">25</span>
+							</a>
+						</li>
+						<li ng-class="{active: $state.includes('grid')}">
+							<a ui-sref="grid" ng-click="rightShow()">
+							<span class="glyphicon glyphicon-th-large"></span>&nbsp; {{ 'grid' | translate }}
+							</a>
+						</li>
+						<li ng-class="{active: $state.includes('table')}">
+							<a ui-sref="table" ng-click="rightShow()">
+							<span class="glyphicon glyphicon-list"></span>&nbsp; {{ 'table' | translate }}
+							</a>
+						</li>
+						<li ng-class="{'show-subnav': showingSubNav=='form'}">
+							<a href="javascript:;" ng-click="showSubNav('form')">
+								<span class="glyphicon glyphicon-equalizer"></span>&nbsp; {{ 'form' | translate }}
+							</a>
+							<ul class="nested-dropdown" collapse="showingSubNav!='form'">
+								<li><a ng-class="{active: $state.includes('form')}" ui-sref="elements" ng-click="rightShow()">{{ 'elements' | translate }}</a></li>
+								<li><a ng-class="{active: $state.includes('form')}" ui-sref="components" ng-click="rightShow()">{{ 'components' | translate }}</a></li>
+							</ul>
+						</li>
+						<li ng-class="{'show-subnav': showingSubNav=='ui'}">
+							<a href="#" ng-click="showSubNav('ui')">
+							<span class="glyphicon glyphicon-cloud-download"></span>&nbsp; {{ 'user_interface' | translate }}
+							</a>
+							<ul class="nested-dropdown" collapse="showingSubNav!='ui'">
+								<li><a ui-sref="button" ng-click="rightShow()">{{ 'buttons' | translate }}</a></li>
+								<li><a ui-sref="dropdown" ng-click="rightShow()">{{ 'dropdown' | translate }}</a></li>
+								<li><a ui-sref="icons" ng-click="rightShow()">{{ 'icons' | translate }}</a></li>
+								<li><a ui-sref="panels" ng-click="rightShow()">{{ 'panels' | translate }}</a></li>
+								<li><a ui-sref="alerts" ng-click="rightShow()">{{ 'alerts' | translate }}</a></li>
+								<li><a ui-sref="progressbars" ng-click="rightShow()">{{ 'progressbars' | translate }}</a></li>
+								<li><a ui-sref="pagination" ng-click="rightShow()">{{ 'pagination' | translate }}</a></li>
+								<li><a ui-sref="other-elements" ng-click="rightShow()">{{ 'other_elements' | translate }}</a></li>
+							</ul>
+						</li>
+						<li ng-class="{'show-subnav': showingSubNav=='charts'}">
+							<a href="#" ng-click="showSubNav('charts')">
+							<span class="glyphicon glyphicon-signal"></span>&nbsp; {{ 'charts' | translate }}	
+							</a>
+							<ul class="nested-dropdown" collapse="showingSubNav!='charts'">
+								<li><a ui-sref="chartjs" ng-click="rightShow();">Chart.js</a></li>
+								<li><a ui-sref="c3chart" ng-click="rightShow();">C3.js</a></li>
+							</ul>
+						</li>
+						<li ng-class="{active: $state.includes('calendar')}"> 
+							<a ui-sref="calendar" ng-click="rightShow();">
+							<span class="glyphicon glyphicon-calendar"></span>&nbsp; {{ 'calendar' | translate }}
+							</a>
+						</li>
+						<li ng-class="{'show-subnav': showingSubNav=='mail'}">
+							<a href="#" ng-click="showSubNav('mail')">
+							<span class="glyphicon glyphicon-envelope"></span>&nbsp; {{ 'mail' | translate }}
+							</a>
+							<ul class="nested-dropdown" collapse="showingSubNav!='mail'">
+								<li><a ui-sref="inbox" ng-click="rightShow();">{{ 'inbox' | translate }}</a></li>
+								<li><a ui-sref="compose" ng-click="rightShow();">{{ 'compose' | translate }}</a></li>
+							</ul>
+						</li>
+						<li ng-class="{active: $state.includes('invoice')}"> 
+							<a ui-sref="invoice" ng-click="rightShow();">
+							<span class="glyphicon glyphicon-list-alt"></span>&nbsp; {{ 'invoice' | translate }}
+							</a>
+						</li>
+						<li ng-class="{active: $state.includes('product')}"> 
+							<a ui-sref="product" ng-click="rightShow();">
+							<span class="glyphicon glyphicon-list-alt"></span>&nbsp; {{ 'product' | translate }}
+							</a>
+						</li>
+						<li ng-class="{'show-subnav': showingSubNav=='pages'}">
+							<a href="#" ng-click="showSubNav('pages')">
+							<span class="glyphicon glyphicon-duplicate"></span>&nbsp; {{ 'pages' | translate }}
+							</a>
+							<ul class="nested-dropdown" collapse="showingSubNav!='pages'">
+								<li><a ui-sref="blank" ng-click="rightShow();">{{ 'blankpage' | translate }}</a></li>
+								<li><a ui-sref="login" ng-click="rightShow();">{{ 'login' | translate }}</a></li>
+								<li><a ui-sref="signup" ng-click="rightShow();">{{ 'signup' | translate }}</a></li>
+								<li><a ui-sref="404-page" ng-click="rightShow();">{{ '404page' | translate }}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </aside>

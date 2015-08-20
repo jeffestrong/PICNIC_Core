@@ -9382,6 +9382,9 @@ to prevent collapsing during animation*/
   .shown {
     display: none !important;
   }
+  #right-sidebar {
+    top: 50px !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .push #sidebar {
@@ -9391,18 +9394,53 @@ to prevent collapsing during animation*/
     margin-left: 235px;
     margin-right: -235px;
   }
-  .push-right #right-sidebar {
-    right: 0;
-  }
+}
+.push-right1 #right-sidebar {
+  right: 0;
+  width: 235px;
+}
+#sidebar {
+  background: #2089c9;
+  z-index: 5;
+}
+.widgets-content {
+  background: #3ca2e0;
 }
 #right-sidebar {
   position: fixed;
   right: -235px;
   bottom: 0;
   top: 70px;
+  background: #2089c9;
   z-index: 2;
-  background: #3ca2e0;
   transition: all 0.2s ease-in-out;
+}
+#right-sidebar .sidebar-profile {
+  background: #3ca2e0;
+}
+#right-sidebar .widgets-content {
+  background: #2089c9;
+}
+#right-sidebar .widgets-content .menu li a {
+  color: white;
+}
+#right-sidebar .widgets-content .menu li.active a {
+  background: #196b9d;
+}
+#right-sidebar .widgets-content .menu .nested-dropdown {
+  padding-left: 0 !important;
+}
+#right-sidebar .widgets-content .menu .nested-dropdown li {
+  height: 35px;
+}
+#right-sidebar .widgets-content .menu .nested-dropdown li a {
+  padding-left: 40px;
+  display: block;
+  height: 100%;
+  padding-top: 8px;
+}
+#right-sidebar .widgets-content .menu .nested-dropdown li a:hover {
+  background: #2698dd;
 }
 .no-padding {
   padding: 0;
