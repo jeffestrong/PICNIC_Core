@@ -9322,6 +9322,12 @@ to prevent collapsing during animation*/
   .navbar .right-show {
     display: block;
   }
+  .navbar .open a {
+    background-color: inherit;
+  }
+  .navbar .form-control {
+    color: white;
+  }
   .sidenav-outer {
     top: 70px !important;
   }
@@ -9480,6 +9486,25 @@ to prevent collapsing during animation*/
     float: none !important;
     padding-top: 5px;
     clear: both;
+  }
+}
+/* Styles for print media */
+@media print {
+  [ui-view] {
+    position: static;
+    -webkit-transform-style: initial;
+  }
+  .navbar {
+    display: none;
+  }
+  #sidebar {
+    display: none;
+  }
+  #right-sidebar {
+    display: none;
+  }
+  #body-container {
+    margin-top: -100px;
   }
 }
 .browsehappy {

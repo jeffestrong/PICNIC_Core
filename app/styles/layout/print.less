@@ -1,0 +1,20 @@
+/* Styles for print media */
+
+@media print {
+   [ui-view] {
+   	position: static;
+   	-webkit-transform-style: initial;
+   }
+   .navbar {
+   	display: none;
+   }
+   #sidebar {
+   	display: none;
+   }
+   #right-sidebar {
+   	display: none;
+   }
+   #body-container {
+   	margin-top: -100px;
+   }
+}
